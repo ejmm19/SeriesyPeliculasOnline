@@ -30,6 +30,9 @@ class NavegacionAdmin{
 	public function VerDetalles(){
 		include('../../php/vistas/admin/verdetalles.php'); 	
 	}
+	public function Editar(){
+		include('../../php/vistas/admin/editar.php'); 	
+	}
 	
 
 }

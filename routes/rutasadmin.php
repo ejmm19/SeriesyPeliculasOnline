@@ -22,6 +22,8 @@ if (!isset($_GET['op'])||$_GET['op']=='') {
 	$navegacionadmin->listaseries();
 }elseif ($_GET['op']=='verdetalles') {
 	$navegacionadmin->VerDetalles();
+}elseif ($_GET['op']=='editar') {
+	$navegacionadmin->Editar();
 }
 
 

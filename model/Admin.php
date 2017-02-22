@@ -22,8 +22,8 @@ class Admin extends Conexion{
         	echo "<tr>
       				<td>".$cont++."</td>
       				<td>".$datos[1]."</td>
-      				<td>".$datos[5]."</td>
-      				<td>".$datos[6]."</td>
+      				<td>".$this->ConvertTable('categorias',$datos[5])."</td>
+      				<td>".$this->ConvertTable('idioma',$datos[6])."</td>
       				<td>".$datos[7]."</td>
       				<td>".$datos[8]."</td>
       				<td><a href='index.php?op=verdetalles&ver=".$datos[0]."'>Ver</a></td>
@@ -34,8 +34,8 @@ class Admin extends Conexion{
 	public function ConvertTable($tabla,$id){
 		$sql = Conexion::conexion()->prepare("SELECT nombre FROM ".$tabla." WHERE id = ".$id);
         $sql->execute();
-        $datos = $sql->fetch();
-        return $datos;
+        $dat = $sql->fetch();
+        return $dat[0];
 	}
 	public function MostrarDetalles($tabla,$id){
 		$sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla." WHERE id = ".$id);
