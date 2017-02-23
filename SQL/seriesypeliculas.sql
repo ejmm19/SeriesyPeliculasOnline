@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2017 a las 12:55:38
+-- Tiempo de generación: 23-02-2017 a las 07:25:29
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -93,8 +93,8 @@ CREATE TABLE `peliculas` (
 --
 
 INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `url`, `img`, `id_categoria`, `id_idioma`, `views`, `calidad`) VALUES
-(1, 'Underworld: Guerras de sangre', 'Continua con la vampira de los "Death Dealers", Selene (Kate Beckinsale), tras eludir los brutales ataques que recibió de los licántropos y de los vampiros que la traicionaron. Junto a su único aliado, David (Theo James) y su padre Thomas (Charles Dance), debe poner fin a la eterna guerra entre los hombres lobo y los vampiros, aunque eso signifique un último sacrificio.', 'https://openload.co/embed/qR2LMKtAgl4/', 'db_posters_38990.jpg', 1, 1, 0, 'hd720'),
-(2, 'La luz entre los oceanos', 'Australia, 1926. Un bote encalla en una isla remota y a su encuentro acuden el farero Tom Sherbourne y su joven esposa Isabel. En el interior del bote yacen un hombre muerto y un bebé que llora con desesperación. Tom e Isabel adoptan al niño y deciden criarlo sin informar a las autoridades. Todo se complica cuando descubren que la madre biológica del bebé está viva. Estreno en USA: septiembre 2016. Estreno en España: enero 2017.', 'https://openload.co/embed/sZHcLKRceaY/', '2476.jpg', 4, 3, 0, 'hd720');
+(1, 'Underworld 5 : Guerras de sangre', 'Continua con la vampira de los "Death Dealers", Selene (Kate Beckinsale), tras eludir los brutales ataques que recibió de los licántropos y de los vampiros que la traicionaron. Junto a su único aliado, David (Theo James) y su padre Thomas (Charles Dance), debe poner fin a la eterna guerra entre los hombres lobo y los vampiros, aunque eso signifique un último sacrificio.', 'https://openload.co/embed/qR2LMKtAgl4/', 'db_posters_38990.jpg', 1, 1, 0, 'HD 1080p'),
+(2, 'La luz entre los oceanos', 'Australia, 1926. Un bote encalla en una isla remota y a su encuentro acuden el farero Tom Sherbourne y su joven esposa Isabel. En el interior del bote yacen un hombre muerto y un bebé que llora con desesperación. Tom e Isabel adoptan al niño y deciden criarlo sin informar a las autoridades. Todo se complica cuando descubren que la madre biológica del bebé está viva. Estreno en USA: septiembre 2016. Estreno en España: enero 2017.', 'https://openload.co/embed/sZHcLKRceaY/', '2476.jpg', 4, 3, 0, 'HD720p');
 
 -- --------------------------------------------------------
 

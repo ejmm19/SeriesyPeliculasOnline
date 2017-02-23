@@ -19,7 +19,7 @@
       <div class="col-md-3">
          <img src="../../img/caratulas/<?php echo $array['img']; ?>" width="100%" height="350px">
        </div>
-       <div class="col-md-9">
+       <div class="col-md-8">
          <p align="justify"><?php echo $array['descripcion']; ?></p>
          <hr>
          <ul>

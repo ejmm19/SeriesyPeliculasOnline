@@ -71,5 +71,10 @@ class Admin extends Conexion{
 											  VALUES ('".$nombre."','".$descrip."','".$url."','".$img."','".$cat."','".$idioma."','".$calidad."')");
         $sql->execute();
 	}
+	public function EditPeliculas($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$id){
+		$sql = Conexion::conexion()->prepare("UPDATE peliculas SET nombre ='".$nombre."', descripcion='".$descrip."', url='".$url."',img='".$img."', id_categoria='".$cat."', id_idioma='".$idioma."', calidad='".$calidad."' WHERE id=".$id);
+		$sql->execute();
+		
+	}
 }
 ?>

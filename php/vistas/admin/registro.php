@@ -37,7 +37,7 @@
     <div class="form-group">
       <label for="inputPassword" class="col-lg-2 control-label">Caratula <strong>200 x 300</strong></label>
       <div class="col-lg-10">
-        <input type="file" name="caratulapelicula" required="">
+        <input type="file" name="caratulapelicula" required="" id="caratulapeliculaedit"> 
         <div class="checkbox">
         </div>
       </div>
@@ -81,5 +81,9 @@
     </div>
   </fieldset>
 </form>
+    </div>
+    <div class="col-lg-3">
+    <legend>Imagen de Carátula</legend>
+      <img src="" id="imgSalida" width="100%" height="350px">
     </div>
 </div>
