@@ -27,8 +27,7 @@
     
     <?php 
         $contenidoadmin = new ContenidoAdmin();
-        $contenidoadmin->ListarPeliculas(); ?>
-    
+        $contenidoadmin->ListarPeliculas(); ?>    
   </tbody>
 </table> 
     </div>

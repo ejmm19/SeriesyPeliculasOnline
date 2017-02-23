@@ -20,6 +20,8 @@ if (!isset($_GET['op'])||$_GET['op']=='') {
 	$navegacionadmin->listapeliculas();
 }elseif ($_GET['op']=='listaseries') {
 	$navegacionadmin->listaseries();
+}elseif ($_GET['op']=='verdetalles') {
+	$navegacionadmin->VerDetalles();
 }
 
 

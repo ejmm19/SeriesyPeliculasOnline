@@ -27,6 +27,9 @@ class NavegacionAdmin{
 	public function listaseries(){
 		include('../../php/vistas/admin/listaseries.php'); 
 	}
+	public function VerDetalles(){
+		include('../../php/vistas/admin/verdetalles.php'); 	
+	}
 	
 
 }

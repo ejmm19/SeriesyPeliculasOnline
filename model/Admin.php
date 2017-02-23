@@ -26,10 +26,22 @@ class Admin extends Conexion{
       				<td>".$datos[6]."</td>
       				<td>".$datos[7]."</td>
       				<td>".$datos[8]."</td>
-      				<td><a href='#'>Ver</a></td>
+      				<td><a href='index.php?op=verdetalles&ver=".$datos[0]."'>Ver</a></td>
     			</tr>";
         	
         }
+	}
+	public function ConvertTable($tabla,$id){
+		$sql = Conexion::conexion()->prepare("SELECT nombre FROM ".$tabla." WHERE id = ".$id);
+        $sql->execute();
+        $datos = $sql->fetch();
+        return $datos;
+	}
+	public function MostrarDetalles($tabla,$id){
+		$sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla." WHERE id = ".$id);
+        $sql->execute();
+        $datos = $sql->fetch();
+        return $datos;
 	}
 	public function SubirImg($fil,$carpeta){
     	if ($fil['name']!=="") {
