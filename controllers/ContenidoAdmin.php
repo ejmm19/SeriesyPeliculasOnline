@@ -2,8 +2,7 @@
 * 
 */
 include('../../model/Admin.php');
-class ContenidoAdmin extends Admin
-{
+class ContenidoAdmin extends Admin{
 	
 	public function Listarcategorias(){
 		return Admin::ListarSelect('categorias');
@@ -11,8 +10,6 @@ class ContenidoAdmin extends Admin
 	public function Listaridiomas(){
 		return Admin::ListarSelect('idioma');
 	}
-  public function Holamundo(){
-    echo "hola mundo";
-  }
+  	
 } 
 ?>

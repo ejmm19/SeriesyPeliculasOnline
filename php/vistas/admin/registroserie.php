@@ -28,35 +28,20 @@
         </div>
       </div>
     </div>
-     <div class="form-group">
-      <label for="inputnombre" class="col-lg-2 control-label">Url</label>
-      <div class="col-lg-10">
-        <input type="text" class="form-control" name="urlserie" placeholder="Url" required="">
-      </div>
-    </div>
     <div class="form-group">
       <label for="inputPassword" class="col-lg-2 control-label">Caratula <strong>200 x 300</strong></label>
       <div class="col-lg-10">
-        <input type="file" name="caratulaserie" required="">
+        <input type="file" name="caratulaserie" required="" id="caratulapeliculaedit">
         <div class="checkbox">
         </div>
       </div>
     </div>
-    <div class="form-group">
-      <label for="select" class="col-lg-2 control-label">Categoría</label>
-      <div class="col-lg-10">
-        <select class="form-control" name="categoriaserie" required="">
-        <?php 
-         $contenidoadmin = new ContenidoAdmin();
-        $contenidoadmin->Listarcategorias(); ?>
-        </select>
-      </div>
-    </div>
+    
     <div class="form-group">
       <label for="select" class="col-lg-2 control-label">Idioma</label>
       <div class="col-lg-10">
         <select class="form-control" name="idiomaserie">
-           <?php 
+           <?php $contenidoadmin = new ContenidoAdmin();
             $contenidoadmin->Listaridiomas(); ?>
         </select>
       </div>
@@ -70,5 +55,9 @@
     </div>
   </fieldset>
 </form>
+    </div>
+    <div class="col-lg-3">
+    <legend>Imagen de Carátula</legend>
+      <img src="" id="imgSalida" width="100%" height="350px">
     </div>
 </div>

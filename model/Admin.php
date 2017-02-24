@@ -31,6 +31,21 @@ class Admin extends Conexion{
         	
         }
 	}
+	public function ListarSeries(){
+		$sql = Conexion::conexion()->prepare("SELECT * FROM series");
+        $sql->execute();
+        $cont=1;
+        while ($datos = $sql->fetch()) {
+        	echo "<tr>
+      				<td>".$cont++."</td>
+      				<td>".$datos[1]."</td>
+      				<td>".$this->ConvertTable('idioma',$datos[4])."</td>
+      				<td>".$datos[5]."</td>
+      				<td><a href='index.php?op=verdetallesdeserie&ver=".$datos[0]."'>Ver</a></td>
+    			</tr>";
+        	
+        }
+	}
 	public function ConvertTable($tabla,$id){
 		$sql = Conexion::conexion()->prepare("SELECT nombre FROM ".$tabla." WHERE id = ".$id);
         $sql->execute();
@@ -42,6 +57,10 @@ class Admin extends Conexion{
         $sql->execute();
         $datos = $sql->fetch();
         return $datos;
+	}
+	public function Eliminar($id,$tabla){
+		$sql = Conexion::conexion()->prepare("DELETE FROM ".$tabla." WHERE id =".$id);
+		$sql->execute();
 	}
 	public function SubirImg($fil,$carpeta){
     	if ($fil['name']!=="") {
@@ -73,8 +92,42 @@ class Admin extends Conexion{
 	}
 	public function EditPeliculas($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$id){
 		$sql = Conexion::conexion()->prepare("UPDATE peliculas SET nombre ='".$nombre."', descripcion='".$descrip."', url='".$url."',img='".$img."', id_categoria='".$cat."', id_idioma='".$idioma."', calidad='".$calidad."' WHERE id=".$id);
+		$sql->execute();	
+	}
+	public function CreateSerie($nombre,$descripcion,$img,$idioma){
+		$sql = Conexion::conexion()->prepare("INSERT INTO series (nombre, descripcion, img, id_idioma)
+											  VALUES ('".$nombre."','".$descripcion."','".$img."','".$idioma."')");
+        $sql->execute();
+	}
+	public function CrearTableCapitulosSerie($nombretabla){
+		$sql=Conexion::conexion()->prepare("CREATE TABLE ".$nombretabla." (
+											id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+											serie_id INT(11) NOT NULL,
+											genero_id INT(11) NOT NULL,
+											cap_num INT(11) NOT NULL,
+											nombre_cap VARCHAR(50) NOT NULL,
+											url VARCHAR(100) NOT NULL,
+											temporada INT(11) NOT NULL,
+											fecha TIMESTAMP NOT NULL );
+
+											ALTER TABLE ".$nombretabla."
+  											ADD KEY serie_id (serie_id);
+
+  											ALTER TABLE ".$nombretabla."
+  											ADD CONSTRAINT ".$nombretabla."_ibfk_1
+  											FOREIGN KEY (serie_id) REFERENCES series (id)
+  											ON DELETE NO ACTION ON UPDATE CASCADE;
+
+  											ALTER TABLE ".$nombretabla."
+  											ADD CONSTRAINT ".$nombretabla."_ibfk_2
+  											FOREIGN KEY (genero_id) REFERENCES genero_series (id)
+  											ON DELETE NO ACTION ON UPDATE CASCADE; ");
 		$sql->execute();
-		
+	}
+	public function EditSeries($nombre,$descripcion,$img,$idioma,$estado,$id){
+		$sql = Conexion::conexion()->prepare("UPDATE series SET nombre ='".$nombre."', descripcion='".$descripcion."',img='".$img."',
+		 id_idioma='".$idioma."', estado='".$estado."' WHERE id=".$id);
+		$sql->execute();	
 	}
 }
 ?>

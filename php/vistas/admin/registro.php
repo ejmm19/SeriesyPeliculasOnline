@@ -65,9 +65,9 @@
       <label for="select" class="col-lg-2 control-label">Calidad</label>
       <div class="col-lg-10">
         <select class="form-control" name="calidad" required="">
-          <option value="SD480">SD 480p</option>
-          <option value="HD720">HD 720p</option>
-          <option value="HD1080">HD 1080p</option>
+          <option value="SD 480p">SD 480p</option>
+          <option value="HD 720p">HD 720p</option>
+          <option value="HD 1080p">HD 1080p</option>
         </select>
       </div>
     </div>

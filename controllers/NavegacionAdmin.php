@@ -33,7 +33,12 @@ class NavegacionAdmin{
 	public function Editar(){
 		include('../../php/vistas/admin/editar.php'); 	
 	}
-	
+	public function VerDetallesSerie(){
+		include('../../php/vistas/admin/verdetallesdeserie.php'); 		
+	}
+	public function EditarSerie(){
+		include('../../php/vistas/admin/editarserie.php'); 	
+	}
 
 }
  ?>

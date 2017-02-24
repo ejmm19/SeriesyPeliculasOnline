@@ -1,8 +1,8 @@
 <?php
 
 include('../../controllers/NavegacionAdmin.php');
-//include('../../controllers/ContenidoAdmin.php');
-//$contadmin= new ContenidoAdmin();
+
+
 $navegacionadmin= new NavegacionAdmin();
 if (!isset($_GET['op'])||$_GET['op']=='') {
     $navegacionadmin->dashboard();
@@ -24,7 +24,12 @@ if (!isset($_GET['op'])||$_GET['op']=='') {
 	$navegacionadmin->VerDetalles();
 }elseif ($_GET['op']=='editar') {
 	$navegacionadmin->Editar();
+}elseif ($_GET['op']=='verdetallesdeserie') {
+	$navegacionadmin->VerDetallesSerie();
+}elseif ($_GET['op']=='editarserie') {
+	$navegacionadmin->EditarSerie();
 }
+
 
 
  ?>
