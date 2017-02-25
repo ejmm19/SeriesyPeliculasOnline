@@ -12,7 +12,7 @@ if (isset($_FILES['caratulapelicula'])) {
 }
 if (isset($_FILES['caratulaserie'])) {
 	$admin->SubirImg($_FILES['caratulaserie'],'seriesportada');
-	$admin->CreateSerie($_POST['nombreserie'],$_POST['descripcionserie'],$_FILES['caratulaserie']['name'],$_POST['idiomaserie']);
+	$admin->CreateSerie($_POST['nombreserie'],$_POST['descripcionserie'],$_FILES['caratulaserie']['name'],$_POST['idiomaserie'],'Emision');
 	$admin->CrearTableCapitulosSerie(strtolower("z_capitulos_".str_replace(' ', '', $_POST['nombreserie'])));
 	echo "<script>window.location='../admin/panel/index.php?op=listaseries';</script>";
 }
@@ -44,6 +44,8 @@ if (isset($_POST['nombreserieedit'])) {
 
 
 
+
+
 if (isset($_POST['eliminar'])) {
 	//echo $_POST['eliminar'];
 	$admin->Eliminar($_POST['eliminar'],'peliculas');
@@ -54,6 +56,14 @@ if (isset($_POST['eliminarserie'])) {
 	$admin->Eliminar($_POST['eliminarserie'],'series');
 	echo "<script>window.location='../admin/panel/index.php?op=listaseries';</script>";
 }
+
+if (isset($_POST['nombrecap'])) {
+	$admin->AgregarCap(strtolower("z_capitulos_".str_replace(' ', '', $_POST['nombreserie'])),$_POST['serieid'],
+		$_POST['numerocap'],$_POST['nombrecap'],$_POST['urlcap'],$_POST['temporada'],$_POST['fecha']);
+	
+	echo "<script>window.location='../admin/panel/index.php?op=verdetallesdeserie&ver=".$_POST['serieid']."';</script>";
+}
+
 
 
 

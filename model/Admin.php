@@ -39,8 +39,8 @@ class Admin extends Conexion{
         	echo "<tr>
       				<td>".$cont++."</td>
       				<td>".$datos[1]."</td>
-      				<td>".$this->ConvertTable('idioma',$datos[4])."</td>
-      				<td>".$datos[5]."</td>
+      				<td>".$this->ConvertTable('idioma',$datos[5])."</td>
+      				<td>".$datos[6]."</td>
       				<td><a href='index.php?op=verdetallesdeserie&ver=".$datos[0]."'>Ver</a></td>
     			</tr>";
         	
@@ -94,16 +94,15 @@ class Admin extends Conexion{
 		$sql = Conexion::conexion()->prepare("UPDATE peliculas SET nombre ='".$nombre."', descripcion='".$descrip."', url='".$url."',img='".$img."', id_categoria='".$cat."', id_idioma='".$idioma."', calidad='".$calidad."' WHERE id=".$id);
 		$sql->execute();	
 	}
-	public function CreateSerie($nombre,$descripcion,$img,$idioma){
-		$sql = Conexion::conexion()->prepare("INSERT INTO series (nombre, descripcion, img, id_idioma)
-											  VALUES ('".$nombre."','".$descripcion."','".$img."','".$idioma."')");
+	public function CreateSerie($nombre,$descripcion,$img,$idioma,$estado){
+		$sql = Conexion::conexion()->prepare("INSERT INTO series (nombre, descripcion, img, id_idioma, estado)
+											  VALUES ('".$nombre."','".$descripcion."','".$img."','".$idioma."','".$estado."')");
         $sql->execute();
 	}
 	public function CrearTableCapitulosSerie($nombretabla){
 		$sql=Conexion::conexion()->prepare("CREATE TABLE ".$nombretabla." (
 											id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 											serie_id INT(11) NOT NULL,
-											genero_id INT(11) NOT NULL,
 											cap_num INT(11) NOT NULL,
 											nombre_cap VARCHAR(50) NOT NULL,
 											url VARCHAR(100) NOT NULL,
@@ -116,11 +115,6 @@ class Admin extends Conexion{
   											ALTER TABLE ".$nombretabla."
   											ADD CONSTRAINT ".$nombretabla."_ibfk_1
   											FOREIGN KEY (serie_id) REFERENCES series (id)
-  											ON DELETE NO ACTION ON UPDATE CASCADE;
-
-  											ALTER TABLE ".$nombretabla."
-  											ADD CONSTRAINT ".$nombretabla."_ibfk_2
-  											FOREIGN KEY (genero_id) REFERENCES genero_series (id)
   											ON DELETE NO ACTION ON UPDATE CASCADE; ");
 		$sql->execute();
 	}
@@ -129,5 +123,27 @@ class Admin extends Conexion{
 		 id_idioma='".$idioma."', estado='".$estado."' WHERE id=".$id);
 		$sql->execute();	
 	}
+  public function ListarCapSerie($tabla){
+        $sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla);
+        $sql->execute();
+      
+        while ($datos = $sql->fetch()) {
+          echo "<tr>
+              
+              <td>".$datos[2]."</td>
+              <td>".$datos[3]."</td>
+              <td><a href='".$datos[4]."' target='_blank'>".$datos[4]."</a></td>
+              <td>".$datos[5]."</td>
+              <td>".$datos[6]."</td>
+              <td><a href='index.php?op=verdetallesdeserie&ver=".$datos[0]."'>Ver</a></td>
+          </tr>";
+          
+        }
+  }
+  public function AgregarCap($tabla,$idserie,$capnum,$nombrecap,$url,$temporada,$fecha){
+    $sql=Conexion::conexion()->prepare("INSERT INTO ".$tabla." (serie_id, cap_num, nombre_cap, url, temporada, fecha)
+                                       VALUES ('".$idserie."','".$capnum."','".$nombrecap."','".$url."','".$temporada."','".$fecha."')");
+    $sql->execute();
+  }
 }
 ?>
