@@ -135,7 +135,6 @@ class Admin extends Conexion{
               <td><a href='".$datos[4]."' target='_blank'>".$datos[4]."</a></td>
               <td>".$datos[5]."</td>
               <td>".$datos[6]."</td>
-              <td><a href='index.php?op=verdetallesdeserie&ver=".$datos[0]."'>Ver</a></td>
           </tr>";
           
         }

@@ -73,7 +73,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Agregar Capitulo deb  <b> <?php echo $array['nombre'] ?></b></h4>                    
+                    <h4 class="modal-title">Agregar Capitulo de  <b> <?php echo $array['nombre'] ?></b></h4>                    
                   </div>
                   <div class="modal-body">
                   <form action="../../controllers/ProcesosController.php" class="form-horizontal" method="post">
@@ -151,13 +151,13 @@
       <th>URL</th>
       <th>Temporada</th>
       <th>Fecha</th>
-      <th>Ver</th>
+      
     </tr>
   </thead>
   <tbody>
   <?php 
    
-  $admin->ListarCapSerie('z_capitulos_dragonballsuper');
+  $admin->ListarCapSerie("z_capitulos_".str_replace(' ', '', $array['nombre']));
 
      
    ?>
