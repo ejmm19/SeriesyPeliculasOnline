@@ -85,7 +85,7 @@
                     <div class="form-group">
                       <label for="inputEmail" class="col-lg-2 control-label">Nombre</label>
                       <div class="col-lg-10">
-                        <input type="text" class="form-control" name="nombrecap" placeholder="Nombre del capitulo" required="">
+                        <input type="text" class="form-control" name="nombrecap" placeholder="Nombre del capitulo" required="" autofocus="">
                       </div>
                     </div>
 
@@ -113,7 +113,7 @@
                     <div class="form-group">
                       <label for="inputEmail" class="col-lg-2 control-label">Fecha</label>
                       <div class="col-lg-10">
-                        <input type="date" class="form-control" name="fecha" min="1" placeholder="Fecha" required="">
+                        <input type="hidden" class="form-control" name="fecha" min="1" placeholder="Fecha">
                       </div>
                     </div>
                   
@@ -167,6 +167,9 @@
     </div>
 </div>
 
+<script type="text/javascript">
+ var clock = new Date(); // 
+</script>
 
 
             

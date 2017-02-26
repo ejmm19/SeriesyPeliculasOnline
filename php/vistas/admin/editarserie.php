@@ -23,7 +23,9 @@
     <div class="form-group">
       <label for="inputnombre" class="col-lg-2 control-label">Nombre</label>
       <div class="col-lg-10">
-        <input type="text" class="form-control" name="nombreserieedit" value="<?php echo $array['nombre'] ?>" placeholder="Nombre de la Pelicula" >
+      <br>
+        <?php echo $array['nombre'] ?>
+        <input type="hidden" class="form-control" name="nombreserieedit" value="<?php echo $array['nombre'] ?>" placeholder="Nombre de la Pelicula" >
       </div>
     </div>
     <div class="form-group">

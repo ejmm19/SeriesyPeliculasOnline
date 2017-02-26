@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-02-2017 a las 20:59:27
+-- Tiempo de generación: 26-02-2017 a las 05:46:28
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -146,7 +146,14 @@ CREATE TABLE `series` (
 INSERT INTO `series` (`id`, `nombre`, `descripcion`, `genero_id`, `img`, `id_idioma`, `estado`) VALUES
 (1, 'Dragon Ball Super', 'La serie se desarrollara en la tierra, tiempo después de la lucha terrible contra Majin Buu. Por órdenes de Milk, Goku trabaja fuertemente todos los días en la agricultura. Sin embargo también tiene algunos momentos para entrenar. Por otra parte, Mr Satan, luego de haber salvado al planeta por segunda vez recibe el ¡¿Premio Mundial de la Paz?!\r\n', 0, '2j5yz4z.jpg', 5, 'Emision'),
 (2, 'The Walking Dead Temporada 1', 'Basada en el cómic homónimo de Robert Kirkman. La serie está ambientada en un futuro apocalíptico con la Tierra devastada por el efecto de un cataclismo que ha provocado la mutación en zombies de la mayor parte de los habitantes del planeta. La trama gira en torno a un grupo de supervivientes encabezado por Rick Grimes, un policía que estuvo en estado de coma durante la irrupción de la plaga, tras despertar descubre que el mundo ha cambiado: Los muertos se levantan y devoran a los vivos. Sin comunicación, sin leyes y sin esperanza, buscarán un lugar seguro para poder vivir. La serie tiene como temas principales la supervivencia y los límites humanos, mezclando drama y gore, actualmente es la serie de cable más vista en EEUU.', 0, 'The_Walking_Dead.jpg', 3, 'Finalizado'),
-(4, 'SHINGEKI NO KYOJIN ', 'La historia nos traslada a un mundo en el que la humanidad estuvo a punto de ser exterminada cientos de años atrás por los gigantes. Los gigantes son ...', 0, 's_1212_poster.jpg', 3, 'Finalizado');
+(4, 'SHINGEKI NO KYOJIN ', 'La historia nos traslada a un mundo en el que la humanidad estuvo a punto de ser exterminada cientos de años atrás por los gigantes. Los gigantes son ...', 0, 's_1212_poster.jpg', 3, 'Finalizado'),
+(5, 'The Walking Dead Temporada 2', 'La segunda temporada de la serie the walking dead nos brinda la continuacián de la historia (Temporada 1) de los sobrevivientes que buscan además de un sitio seguro donde vivir, alguna posible solucion a el virus que ha causado todo el caos.\r\nA lo largo de los 13 capitulos el grupo dirigido por rick se enfrentara a dilemas morales y sentimentales que terminaran por desencadenar peleas y nuevas perdidas de los integrantes del grupo.La temporada 2 de The walking dead se comenzó a transmitir a finales del 2011 y se centra en la supervivencia en un nuevo refugio (la granja) que encuentra el grupo luego de una serie de desafortunados acontecimientos como la desaparición de Sofía y el accidente sufrido por Carl.', 0, 'the_walking_dead_season_2.png', 3, 'Finalizado'),
+(6, 'The Walking Dead Temporada 3 ', ' En la temporada 3 veremos como Rick tiene que sufrir una gran perdida y además tendrá que librar una dura batalla frente a un nuevo personaje (El Gobernador) quien sin muchos motivos y a toda costa desea destruir a todos los que se crucen en su camino.Mira The walking dead temporada 3 en español latino online: la historia de the walking dead en español latino retoma su continuación (Temporada 2) meses después de la horda de zombis que obligo a todos los miembros del grupo a salir huyendo de la granja que sirvió de refugio por tanto tiempo, sin shane como miembro y lori en pleno embarazo han estado vagando durante el invierno de casa en casa y ya están muy desgastados físicamente. Pronto nacerá él bebe y necesitan un lugar donde tener el parto seguros y tranquilos, en ese momento ven una cárcel abandonada y a Rick se le ocurre la gran idea de apoderarse de esta ya que ofrece una seguridad avanzada. Mientras tanto Andrea ha estado sobreviviendo junto a su nueva amiga Michonne y tiene un encuentro con un viejo amigo (Merl) quien las lleva a un lugar protegido por “El Gobernador”. Andrea termina enamorándose de El gobernador mientras rick y todo el grupo alojados en la prisión tratan de sobrevivir a los devastadores acontecimientos que transcurren a lo largo de los 16 capítulos que conforman esta temporada de The walking dead.', 0, 'the-walking-dead-temporada-3.jpg', 3, 'Finalizado'),
+(7, 'The Walking Dead Temporada 4', 'Luego de la batalla a muerte que les habia declarado el gobernador y que pudieron ganar los protagonistas de the walking dead, la prisión se ha convertido en un hogar confortable y por el momento seguro para toda la gente que vino de woodbury. Rick ha empezado a cultivar el campo dia a dia para que no les falte el alimento y Michonne sigue una búsqueda solitaria para tratar de encontrar al gobernador. Magie y Gleen cada dia estan mas enamorados y Daryl sigue siendo la pieza clave de la supervivencia.', 0, 'the-walking-dead-temporada-4.jpg', 3, 'Finalizado'),
+(8, 'The Walking Dead Temporada 5', 'La anterior Temporada 4, concluyo con rick y varios de los sobrevivientes en la terminal “terminus”, donde encontraron un grupo de personas que al parecer engañaban a la gente con los carteles de ayuda para secuestrarlos y hacerles daño (se presume que son canibales). Encerrados en un bagon Rick, Michonne, Daryl y Carl se reencuentran con Maggie, Gleen, Tara, Shasha, Bob y los demas. Sin embargo, el paradero de Tyreese, Carol y Beth aun es desconocido.', 0, 'the-walking-dead-temporada-5.jpg', 3, 'Finalizado'),
+(9, 'The Walking Dead Temporada 6', 'La anterior Temporada 5, concluyo con la aparición de Morgan en la comunidad de Alexandria. Rick por su parte trata de mostrarle a la comunidad que deben prepararse porque el peligro puede llegar en cualquier momento y un nuevo grupo de asesinos llamados “The Wolves” están cerca y solo tienen malas intenciones para las que la comunidad deberá estar preparada. Muchos de los que habitan allí aun no conocen en lo que el mundo se ha convertido fuera de sus muros y no sera fácil la tarea que tiene Rick y todo el grupo en sus manos.\r\n\r\n\r\nPor otro lado, se desarrollaran nuevas historias de amor y desamor que tratan de dar nueva esperanza en la vida de estos sobrevivientes, Glenn y Maggie es una de las parejas que quiere fortalecer cada vez mas su unión y Abraham quiere seguir el mismo camino con la persona que ama de corazón. El peligro se aproxima y la diferencia entre las creencias de Morgan y Rick puede ser un problema que cree desunión y debilite la fuerza que siempre ha caracterizado a todos los que siguen a vivos.', 0, '006_1rk1rx.jpg', 3, 'Finalizado'),
+(10, 'The Walking Dead Temporada 7', 'El capitulo final de la Temporada 6 termino con la aparición de Negan en una emboscada que le tendieron los salvadores al grupo de Rick mientras intentaban llevar con urgencia a Maggie a la comunidad de Hilltop para ver a un doctor. Luego de una larga charla Negan le dice al grupo que de ahora en adelante trabajaran para el, le daran la mitad de sus alimentos y que matara a uno de ellos por acabar con muchos de sus hombres.\r\n\r\nPor otro lado Rick parece estar en estado de shock con la situacion y permanece inmóvil. La vida de alguno de estos personajes: Glenn, Daryl, Michonne, Rosita, Abraham, Maggie, Rick, Eugene, Aaron, Sasha o Carl llega a su fin en el comienzo de una batalla contra el villano que viene a hacerle la vida imposible a todos los sobrevivientes de este apocalipsis Zombie.', 0, 'The-Walking-Dead-Temporada-7.jpg', 3, 'Emision'),
+(11, 'Game Of Thrones Temporada 1', 'Game of Thrones (juego de tronos) temporada 1 es la nueva serie de HBO del genero de fantasía medieval que narra la historia de un continente llamado poniente (ficticio) donde se libran batallas violentas entre los 7 reinos que luchan por tener el control del trono de hierro. En game of thrones encontraras escenas de guerra, mucha sangre y lujuria desenfrenada. Juego de tronos se estrenó en el 2011', 0, 'Game Of Thrones.jpg', 3, 'Finalizado');
 
 -- --------------------------------------------------------
 
@@ -273,6 +280,22 @@ INSERT INTO `z_capitulos_dragonballsuper` (`id`, `serie_id`, `cap_num`, `nombre_
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `z_capitulos_gameofthronestemporada1`
+--
+
+CREATE TABLE `z_capitulos_gameofthronestemporada1` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `z_capitulos_shingekinokyojin`
 --
 
@@ -340,7 +363,229 @@ CREATE TABLE `z_capitulos_thewalkingdeadtemporada1` (
 INSERT INTO `z_capitulos_thewalkingdeadtemporada1` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
 (1, 2, 1, 'Los Viejos Tiempos', 'https://openload.co/embed/GJ75tmkgYww', 1, '2017-02-24 05:00:00'),
 (2, 2, 2, 'Agallas', 'https://openload.co/embed/j8cM4-K5roE', 1, '2017-02-24 05:00:00'),
-(3, 2, 3, 'Díselo a las ranas', 'https://openload.co/embed/NxToI-fUMmY', 1, '2017-02-24 05:00:00');
+(3, 2, 3, 'Díselo a las ranas', 'https://openload.co/embed/NxToI-fUMmY', 1, '2017-02-24 05:00:00'),
+(4, 2, 4, 'Los Chicos', 'https://openload.co/embed/bBRhTUWgG04/1x04_-_Chicos.mkv.mp4', 1, '0000-00-00 00:00:00'),
+(5, 2, 6, 'Fuego Forestal', 'https://openload.co/embed/e26_CRKyYI8/', 1, '2017-02-26 01:49:03'),
+(6, 2, 7, 'TS-19', 'https://openload.co/embed/VIXqBVe7m9Y/', 1, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada2`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada2` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada2`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada2` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 5, 1, 'Lo que queda por delante', 'https://openload.co/embed/7OxjW15YkFg/', 2, '0000-00-00 00:00:00'),
+(2, 5, 2, 'Sangría', 'https://openload.co/embed/tlkoLC-rOeA/', 2, '0000-00-00 00:00:00'),
+(3, 5, 3, 'Guarda la última', 'https://openload.co/embed/D4ts6e21Ypg/', 2, '0000-00-00 00:00:00'),
+(4, 5, 4, 'Rosa Cherokee', 'https://openload.co/embed/nBKHKnbrj9o/', 2, '0000-00-00 00:00:00'),
+(5, 5, 5, 'Chupacabra', 'https://openload.co/embed/Bml6boZon18/', 2, '0000-00-00 00:00:00'),
+(6, 5, 6, 'Secretos', 'http://www.planetatvonlinehd.com/stream/410', 2, '0000-00-00 00:00:00'),
+(7, 5, 7, 'Prácticamente Muertos', 'http://www.planetatvonlinehd.com/stream/411', 2, '0000-00-00 00:00:00'),
+(8, 5, 8, 'Nebraska', 'http://www.planetatvonlinehd.com/stream/412', 2, '0000-00-00 00:00:00'),
+(9, 5, 9, 'El dedo en el gatillo', 'http://www.planetatvonlinehd.com/stream/413', 2, '0000-00-00 00:00:00'),
+(10, 5, 10, 'A 18 Millas', 'http://www.planetatvonlinehd.com/stream/414', 2, '0000-00-00 00:00:00'),
+(11, 5, 11, 'Juez, Jurado, Verdugo', 'http://www.planetatvonlinehd.com/stream/415', 2, '0000-00-00 00:00:00'),
+(12, 5, 12, 'Mejores Angeles', 'http://www.planetatvonlinehd.com/stream/416', 2, '0000-00-00 00:00:00'),
+(13, 5, 13, 'Junto al Fuego que se Extingue', 'http://www.planetatvonlinehd.com/stream/417', 2, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada3`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada3` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada3`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada3` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 6, 1, 'Semilla', 'http://www.planetatvonlinehd.com/stream/418', 3, '0000-00-00 00:00:00'),
+(2, 6, 2, 'Enfermos', 'http://www.planetatvonlinehd.com/stream/419', 3, '0000-00-00 00:00:00'),
+(3, 6, 3, 'Camina Conmigo', 'http://www.planetatvonlinehd.com/stream/420', 3, '0000-00-00 00:00:00'),
+(4, 6, 4, 'Asesino Interior', 'http://www.planetatvonlinehd.com/stream/421', 3, '0000-00-00 00:00:00'),
+(5, 6, 5, 'Da la Señal', 'http://www.planetatvonlinehd.com/stream/422', 3, '0000-00-00 00:00:00'),
+(6, 6, 6, 'Perseguidos', 'http://www.planetatvonlinehd.com/stream/423', 3, '0000-00-00 00:00:00'),
+(7, 6, 7, 'Cuando los Muertos llaman a la puerta', 'http://www.planetatvonlinehd.com/stream/424', 3, '0000-00-00 00:00:00'),
+(8, 6, 8, 'Hechos para Sufrir', 'http://www.planetatvonlinehd.com/stream/425', 3, '0000-00-00 00:00:00'),
+(9, 6, 9, 'El Rey Suicida', 'http://www.planetatvonlinehd.com/stream/426', 3, '0000-00-00 00:00:00'),
+(10, 6, 10, 'Hogar', 'http://www.planetatvonlinehd.com/stream/427', 3, '0000-00-00 00:00:00'),
+(11, 6, 11, 'No Soy un Judas', 'http://www.planetatvonlinehd.com/stream/428', 3, '0000-00-00 00:00:00'),
+(12, 6, 12, 'Aclarar', 'http://www.planetatvonlinehd.com/stream/429', 3, '0000-00-00 00:00:00'),
+(13, 6, 13, 'Flecha en el Poste', 'http://www.planetatvonlinehd.com/stream/430', 3, '0000-00-00 00:00:00'),
+(14, 6, 14, 'Presa', 'http://www.planetatvonlinehd.com/stream/431', 3, '0000-00-00 00:00:00'),
+(15, 6, 15, 'Esta Vida Dolorosa', 'http://www.planetatvonlinehd.com/stream/432', 3, '0000-00-00 00:00:00'),
+(16, 6, 16, 'Bienvenidos a las Tumbas', 'http://www.planetatvonlinehd.com/stream/433', 3, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada4`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada4` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada4`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada4` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 7, 1, '30 Días Sin Un accidente', 'http://www.planetatvonlinehd.com/stream/434', 4, '0000-00-00 00:00:00'),
+(2, 7, 2, 'Infectado', 'http://www.planetatvonlinehd.com/stream/435', 4, '0000-00-00 00:00:00'),
+(3, 7, 3, 'Aislamiento', 'http://www.planetatvonlinehd.com/stream/436', 4, '0000-00-00 00:00:00'),
+(4, 7, 4, 'Indiferencia', 'http://www.planetatvonlinehd.com/stream/437', 4, '0000-00-00 00:00:00'),
+(5, 7, 5, 'Internamiento', 'http://www.planetatvonlinehd.com/stream/438', 4, '0000-00-00 00:00:00'),
+(6, 7, 6, 'Camada Viva', 'http://www.planetatvonlinehd.com/stream/439', 4, '0000-00-00 00:00:00'),
+(7, 7, 7, 'Peso Muerto', 'http://www.planetatvonlinehd.com/stream/440', 4, '0000-00-00 00:00:00'),
+(8, 7, 8, 'Demasiado Lejos', 'http://www.planetatvonlinehd.com/stream/441', 4, '0000-00-00 00:00:00'),
+(9, 7, 9, 'Después', 'http://www.planetatvonlinehd.com/stream/442', 4, '0000-00-00 00:00:00'),
+(10, 7, 10, 'Reclusos', 'http://www.planetatvonlinehd.com/stream/443', 4, '0000-00-00 00:00:00'),
+(11, 7, 11, 'Reclamado', 'http://www.planetatvonlinehd.com/stream/444', 4, '0000-00-00 00:00:00'),
+(12, 7, 12, 'Aún', 'http://www.planetatvonlinehd.com/stream/445', 4, '0000-00-00 00:00:00'),
+(13, 7, 13, 'Solo', 'http://www.planetatvonlinehd.com/stream/446', 4, '0000-00-00 00:00:00'),
+(14, 7, 14, 'La Arboleda', 'http://www.planetatvonlinehd.com/stream/447', 4, '0000-00-00 00:00:00'),
+(15, 7, 15, 'Nosotros', 'http://www.planetatvonlinehd.com/stream/448', 4, '0000-00-00 00:00:00'),
+(16, 7, 16, 'A', 'http://www.planetatvonlinehd.com/stream/449', 4, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada5`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada5` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada5`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada5` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 8, 1, 'No es un Santuario', 'http://www.planetatvonlinehd.com/stream/450', 5, '0000-00-00 00:00:00'),
+(2, 8, 2, 'Extraños', 'http://www.planetatvonlinehd.com/stream/451', 5, '0000-00-00 00:00:00'),
+(3, 8, 3, 'Cuatro Paredes y Un Techo', 'http://www.planetatvonlinehd.com/stream/452', 5, '0000-00-00 00:00:00'),
+(4, 8, 4, 'Slabtown', 'http://www.planetatvonlinehd.com/stream/453', 5, '0000-00-00 00:00:00'),
+(5, 8, 5, 'Auto Ayuda', 'http://www.planetatvonlinehd.com/stream/454', 5, '0000-00-00 00:00:00'),
+(6, 8, 6, 'Consumidos', 'http://www.planetatvonlinehd.com/stream/455', 5, '0000-00-00 00:00:00'),
+(7, 8, 7, 'Cruzados', 'http://www.planetatvonlinehd.com/stream/456', 5, '0000-00-00 00:00:00'),
+(8, 8, 8, 'Coda', 'http://www.planetatvonlinehd.com/stream/457', 5, '0000-00-00 00:00:00'),
+(9, 8, 9, 'Lo que pasó y lo que está pasando', 'http://www.planetatvonlinehd.com/stream/458', 5, '0000-00-00 00:00:00'),
+(10, 8, 10, 'Ellos', 'http://www.planetatvonlinehd.com/stream/459', 5, '0000-00-00 00:00:00'),
+(11, 8, 11, 'La Distancia', 'http://www.planetatvonlinehd.com/stream/460', 5, '0000-00-00 00:00:00'),
+(12, 8, 12, 'Recuerda', 'http://www.planetatvonlinehd.com/stream/461', 5, '0000-00-00 00:00:00'),
+(13, 8, 13, 'Olvida', 'http://www.planetatvonlinehd.com/stream/462', 5, '0000-00-00 00:00:00'),
+(14, 8, 14, 'Desgaste', 'http://www.planetatvonlinehd.com/stream/463', 5, '0000-00-00 00:00:00'),
+(15, 8, 15, 'Inténtalo', 'http://www.planetatvonlinehd.com/stream/464', 5, '0000-00-00 00:00:00'),
+(16, 8, 16, 'Vence', 'http://www.planetatvonlinehd.com/stream/465', 5, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada6`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada6` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada6`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada6` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 9, 1, 'Primera vez, Otra vez', 'http://www.planetatvonlinehd.com/stream/466', 6, '0000-00-00 00:00:00'),
+(2, 9, 2, 'JSS', 'http://www.planetatvonlinehd.com/stream/467', 6, '0000-00-00 00:00:00'),
+(3, 9, 3, 'Gracias', 'http://www.planetatvonlinehd.com/stream/468', 6, '0000-00-00 00:00:00'),
+(4, 9, 4, 'Aquí, No es aquí', 'http://www.planetatvonlinehd.com/stream/469', 6, '0000-00-00 00:00:00'),
+(5, 9, 5, 'Ahora', 'http://www.planetatvonlinehd.com/stream/470', 6, '0000-00-00 00:00:00'),
+(6, 9, 6, 'Siempre Responsable', 'http://www.planetatvonlinehd.com/stream/471', 6, '0000-00-00 00:00:00'),
+(7, 9, 7, 'Cuidado', 'http://www.planetatvonlinehd.com/stream/472', 6, '0000-00-00 00:00:00'),
+(8, 9, 8, 'De Principio a Fin', 'http://www.planetatvonlinehd.com/stream/473', 6, '0000-00-00 00:00:00'),
+(9, 9, 9, 'Sin Salida', 'http://www.planetatvonlinehd.com/stream/474', 6, '0000-00-00 00:00:00'),
+(10, 9, 10, 'El Próximo Mundo', 'http://www.planetatvonlinehd.com/stream/475', 6, '0000-00-00 00:00:00'),
+(11, 9, 11, 'Desatar los Nudos', 'http://www.planetatvonlinehd.com/stream/476', 6, '0000-00-00 00:00:00'),
+(12, 9, 12, 'Aún No es Mañana', 'http://www.planetatvonlinehd.com/stream/477', 6, '0000-00-00 00:00:00'),
+(13, 9, 13, 'El Mismo Barco', 'http://www.planetatvonlinehd.com/stream/478', 6, '0000-00-00 00:00:00'),
+(14, 9, 14, 'El Doble de lejos', 'http://www.planetatvonlinehd.com/stream/479', 6, '0000-00-00 00:00:00'),
+(15, 9, 15, 'Este', 'http://www.planetatvonlinehd.com/stream/480', 6, '0000-00-00 00:00:00'),
+(16, 9, 16, 'El Último Día Sobre la Tierra', 'http://www.planetatvonlinehd.com/stream/481', 6, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_thewalkingdeadtemporada7`
+--
+
+CREATE TABLE `z_capitulos_thewalkingdeadtemporada7` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_thewalkingdeadtemporada7`
+--
+
+INSERT INTO `z_capitulos_thewalkingdeadtemporada7` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 10, 1, 'El Día Llegará cuando tú no estés', 'http://www.planetatvonlinehd.com/stream/483', 7, '0000-00-00 00:00:00'),
+(2, 10, 2, 'El Pozo', 'http://www.planetatvonlinehd.com/stream/485', 7, '0000-00-00 00:00:00'),
+(3, 10, 3, 'La Celda', 'http://www.planetatvonlinehd.com/stream/487', 7, '0000-00-00 00:00:00'),
+(4, 10, 4, 'Servicio', 'http://www.planetatvonlinehd.com/stream/489', 7, '0000-00-00 00:00:00'),
+(5, 10, 5, 'Busca Vidas', 'http://www.planetatvonlinehd.com/stream/491', 7, '0000-00-00 00:00:00'),
+(6, 10, 6, 'Maldecir', 'http://www.planetatvonlinehd.com/stream/493', 7, '2017-02-26 04:27:45'),
+(7, 10, 7, 'Cántame Una Canción', 'http://www.planetatvonlinehd.com/stream/495', 7, '0000-00-00 00:00:00'),
+(8, 10, 8, 'Corazones Aún Latiendo', 'http://www.planetatvonlinehd.com/stream/496', 7, '2017-02-26 04:30:53'),
+(9, 10, 9, 'Piedra en el camino', 'http://www.planetatvonlinehd.com/stream/501', 7, '0000-00-00 00:00:00'),
+(10, 10, 10, 'Nuevos Mejores Amigos', 'http://www.planetatvonlinehd.com/stream/530', 7, '0000-00-00 00:00:00');
 
 --
 -- Índices para tablas volcadas
@@ -394,6 +639,13 @@ ALTER TABLE `z_capitulos_dragonballsuper`
   ADD KEY `serie_id` (`serie_id`);
 
 --
+-- Indices de la tabla `z_capitulos_gameofthronestemporada1`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada1`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
 -- Indices de la tabla `z_capitulos_shingekinokyojin`
 --
 ALTER TABLE `z_capitulos_shingekinokyojin`
@@ -404,6 +656,48 @@ ALTER TABLE `z_capitulos_shingekinokyojin`
 -- Indices de la tabla `z_capitulos_thewalkingdeadtemporada1`
 --
 ALTER TABLE `z_capitulos_thewalkingdeadtemporada1`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada2`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada2`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada3`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada3`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada4`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada4`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada5`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada5`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada6`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada6`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_thewalkingdeadtemporada7`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada7`
   ADD PRIMARY KEY (`id`),
   ADD KEY `serie_id` (`serie_id`);
 
@@ -430,12 +724,17 @@ ALTER TABLE `peliculas`
 -- AUTO_INCREMENT de la tabla `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_dragonballsuper`
 --
 ALTER TABLE `z_capitulos_dragonballsuper`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_gameofthronestemporada1`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada1`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_shingekinokyojin`
 --
@@ -445,7 +744,37 @@ ALTER TABLE `z_capitulos_shingekinokyojin`
 -- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada1`
 --
 ALTER TABLE `z_capitulos_thewalkingdeadtemporada1`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada2`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada2`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada3`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada3`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada4`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada4`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada5`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada5`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada6`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada6`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada7`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada7`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- Restricciones para tablas volcadas
 --
@@ -470,6 +799,12 @@ ALTER TABLE `z_capitulos_dragonballsuper`
   ADD CONSTRAINT `z_capitulos_dragonballsuper_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
+-- Filtros para la tabla `z_capitulos_gameofthronestemporada1`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada1`
+  ADD CONSTRAINT `z_capitulos_gameofthronestemporada1_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
 -- Filtros para la tabla `z_capitulos_shingekinokyojin`
 --
 ALTER TABLE `z_capitulos_shingekinokyojin`
@@ -480,6 +815,42 @@ ALTER TABLE `z_capitulos_shingekinokyojin`
 --
 ALTER TABLE `z_capitulos_thewalkingdeadtemporada1`
   ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada1_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada2`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada2`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada2_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada3`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada3`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada3_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada4`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada4`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada4_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada5`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada5`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada5_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada6`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada6`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada6_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_thewalkingdeadtemporada7`
+--
+ALTER TABLE `z_capitulos_thewalkingdeadtemporada7`
+  ADD CONSTRAINT `z_capitulos_thewalkingdeadtemporada7_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
