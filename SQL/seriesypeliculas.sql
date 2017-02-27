@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-02-2017 a las 05:46:28
+-- Tiempo de generación: 27-02-2017 a las 04:40:36
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -120,8 +120,16 @@ CREATE TABLE `peliculas` (
 --
 
 INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `url`, `img`, `id_categoria`, `id_idioma`, `views`, `calidad`) VALUES
-(2, 'La luz entre los oceanos', 'Australia, 1926. Un bote encalla en una isla remota y a su encuentro acuden el farero Tom Sherbourne y su joven esposa Isabel. En el interior del bote yacen un hombre muerto y un bebé que llora con desesperación. Tom e Isabel adoptan al niño y deciden criarlo sin informar a las autoridades. Todo se complica cuando descubren que la madre biológica del bebé está viva. Estreno en USA: septiembre 2016. Estreno en España: enero 2017.', 'https://openload.co/embed/sZHcLKRceaY/', '2476.jpg', 4, 3, 0, 'HD720p'),
-(4, 'Inframundo 5: Guerras de Sangre / Underworld 5', 'Nueva entrega de la franquicia Underworld, en la que la vampira Selene (Kate Beckinsale) deberá defenderse de ataques brutales de los dos clanes, el de los Lycans y el de los Vampiros que la traicionaron. Con sus únicos aliados, David (Theo James) y Thomas su padre (Charles Dance), ella debe detener la guerra eterna entre Vampiros y Lycans, aunque signifique tener que hacer un último sacrificio. Estreno en USA: enero 2017.', 'https://openload.co/embed/qR2LMKtAgl4/', 'db_posters_38990.jpg', 1, 1, 0, 'HD 720p');
+(1, 'La luz entre los oceanos', 'Australia, 1926. Un bote encalla en una isla remota y a su encuentro acuden el farero Tom Sherbourne y su joven esposa Isabel. En el interior del bote yacen un hombre muerto y un bebé que llora con desesperación. Tom e Isabel adoptan al niño y deciden criarlo sin informar a las autoridades. Todo se complica cuando descubren que la madre biológica del bebé está viva. Estreno en USA: septiembre 2016. Estreno en España: enero 2017.', 'https://openload.co/embed/sZHcLKRceaY/', '2476.jpg', 4, 3, 0, 'HD720p'),
+(2, 'Inframundo 5: Guerras de Sangre / Underworld 5', 'Nueva entrega de la franquicia Underworld, en la que la vampira Selene (Kate Beckinsale) deberá defenderse de ataques brutales de los dos clanes, el de los Lycans y el de los Vampiros que la traicionaron. Con sus únicos aliados, David (Theo James) y Thomas su padre (Charles Dance), ella debe detener la guerra eterna entre Vampiros y Lycans, aunque signifique tener que hacer un último sacrificio. Estreno en USA: enero 2017.', 'https://openload.co/embed/qR2LMKtAgl4/', 'db_posters_38990.jpg', 1, 1, 2, 'HD 720p'),
+(5, 'Búsqueda Implacable 1', 'Bryan Mills (Liam Neeson), un agente especial retirado, debe volver a la acción para liberar a su hija Kim (Maggie Grace), que ha sido raptada en París por una banda de albanokosovares que se dedica a la trata de blancas. Usando todas sus habilidades como agente especial del gobierno intentará buscar a su hija y vengarse de quienes la tienen.', 'https://openload.co/embed/5JndR4zDzJ4/', 'taken-busqueda-implcable.jpg', 1, 3, 0, 'HD 720p'),
+(6, 'Búsqueda Implacable 2', 'Búsqueda Implacable 2 nos trae nuevamente a Liam Neeson como Bryan Mills, el agente de la CIA retirado con un set particular de habilidades que no lo detuvieron en nada para salvar a su hija Kim de secuestradores albaneses. Cuando el padre de uno de los secuestradores jura venganza, y toma como rehenes a Bryan y a su mujer cuando están de vacaciones en Estambul, Bryan le pide a Kim que los ayude en el rescate, y usa las mismas fuerzas especiales para salvar a su familia y acabar con los secuestradores uno por uno.', 'https://openload.co/embed/Kf5JkNY4oXw/', 'Busqueda.Implacable2.Poster.MundoRmvbLatino.jpg', 1, 3, 0, 'HD 720p'),
+(7, 'Búsqueda Implacable 3', 'Tercera parte de la trilogía de las películas iniciadas en el año 2008 con Búsqueda Implacable ‘Venganza’ y que cuenta con una secuela en 2012 bajo el título ‘Venganza: Conexión Estambul’, donde Liam Neeson (‘Batman Begins’) vuelve a meterse en la piel de Bryan, un espía retirado que no dudará en hacer lo necesario a favor de la justicia y la supervivencia.', 'https://openload.co/embed/jZqycNeJVk8/', 'Tak3n.jpg', 1, 3, 0, 'HD 720p'),
+(8, 'Doctor Strange', 'El doctor Stephen Strange (Benedict Cumberbatch) es un reputado neurocirujano de Nueva York. Todo lo que tiene de brillante y talentoso, lo tiene también de arrogante y vanidoso. Tras sufrir un terrible accidente de coche, sus manos quedan dañadas, cosa que arruina por completo su carrera. Después de varias intervenciones quirúrgicas de su colega, el doctor Nicodemus West (Michael Stuhlbarg), las manos de Stephen Strange consiguen recuperar su movilidad parcial, pero no la suficiente pericia como para volver a operar. Después de estos dramáticos sucesos, y de tener que abandonar definitivamente su profesión, Stephen Strange decide realizar un viaje de sanación al Himalaya que le cambiará la vida. Alejándose de la medicina tradicional, buscará una nueva cura para su lesión. Será entonces cuando conozca a El Anciano (Tilda Swinton), quien le enseñará que el mundo en el que vive es una realidad entre muchas. Descubrirá así un mundo oculto de dimensiones mágicas, y durante su entrenamiento con el maestro místico se revelarán sus poderes psíquicos, como la telepatía, la proyección astral o el teletransporte, que utilizará para combatir al mal.', 'https://openload.co/embed/XQVnFjUUM3c/', '221.jpg', 1, 3, 0, 'HD 720p'),
+(9, 'Jackie', 'Biopic sobre la ex primera dama estadounidense Jacqueline Kennedy, centrado en los días inmediatamente posteriores al asesinato de JFK en Dallas el 22 de noviembre del año 1963.', 'https://openload.co/embed/t_6CVdrxQe4', 'Jackie.jpg', 4, 3, 0, 'HD 720p'),
+(10, 'Animales fantásticos y dónde encontrarlos ', 'Adaptación del libro homónimo de J.K. Rowling, un spin-off que amplía el mundo de la saga Harry Potter desde el punto de vista de Newt Scamander, un mago a quien le encargan escribir un libro sobre seres fantásticos. Se ambientará setenta años antes de lo narrado en las películas del mago.', 'https://openload.co/embed/hMZmlz4295k', '12772313959870206295.png', 2, 3, 0, 'HD 720p'),
+(11, 'Resident Evil 6', 'La humanidad está agonizando tras la traición sufrida por Alice a manos de Wesker. Alice deberá regresar a donde la comenzó la pesadilla -Raccoon City-, ya que allí la Corporación Umbrella está reuniendo fuerzas antes de un último ataque a los últimos supervivientes del apocalipsis. En una carrera contra el tiempo, Alice tendrá que unir fuerzas con viejos y con un inesperado aliado en una batalla contra hordas', 'https://openload.co/embed/pnTeEAW7YIk/videoplayback.mp4', 'res.jpg', 1, 3, 0, 'SD 480p'),
+(12, 'Drone Wars', 'Un combate entre drones y naves deja el cielo lleno de humo y repleto de barcos flotando en todas las direcciones. Mientras, pequeños grupos de humanos que sobreviven se mantienen juntos, tratando desesperadamente de resucitar cualquier apariencia de normalidad que una vez tuvieron. En medio del caos, un equipo de científicos escondidos en Los Ángeles es todo lo que queda para derrotar a los aviones no tripulados y acabar con la nave nodriza.', 'https://openload.co/embed/SVEQW3gXCxU/Drone_Wars_%282016%29_-_Latino_720p.avi.mp4', 'MV5BMTUzOTE1ODUyMF5BMl5BanBnXkFtZTgwNDE5OTE1MDI._V1_UY268_CR100182268_AL_.jpg', 1, 3, 0, 'HD 720p');
 
 -- --------------------------------------------------------
 
@@ -275,7 +283,8 @@ INSERT INTO `z_capitulos_dragonballsuper` (`id`, `serie_id`, `cap_num`, `nombre_
 (76, 1, 76, 'DRAGON BALL SUPER 76 SUB ESPAÑOL', 'https://openload.co/embed/xAuKpbFJIHE/76.mp4', 1, '2017-02-25 05:00:00'),
 (77, 1, 77, 'DRAGON BALL SUPER 77 SUB ESPAÑOL', 'https://openload.co/embed/hC5t7gp1x6g/77.mp4', 1, '2017-02-25 05:00:00'),
 (78, 1, 78, 'DRAGON BALL SUPER 78 SUB ESPAÑOL', 'https://openload.co/embed/pgN2E6pU5jU/78.mp4', 1, '2017-02-25 05:00:00'),
-(79, 1, 79, 'DRAGON BALL SUPER 79 SUB ESPAÑOL', 'https://openload.co/embed/_SlQ6chCcYw/79.mp4', 1, '2017-02-25 05:00:00');
+(79, 1, 79, 'DRAGON BALL SUPER 79 SUB ESPAÑOL', 'https://openload.co/embed/_SlQ6chCcYw/79.mp4', 1, '2017-02-25 05:00:00'),
+(80, 1, 80, 'DRAGON BALL SUPER 80 SUB ESPAÑOL', 'https://openload.co/embed/RkpPpct2hOI/80.mp4', 1, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -719,7 +728,7 @@ ALTER TABLE `idioma`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `series`
 --
@@ -729,7 +738,7 @@ ALTER TABLE `series`
 -- AUTO_INCREMENT de la tabla `z_capitulos_dragonballsuper`
 --
 ALTER TABLE `z_capitulos_dragonballsuper`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_gameofthronestemporada1`
 --

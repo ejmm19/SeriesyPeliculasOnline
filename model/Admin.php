@@ -15,7 +15,7 @@ class Admin extends Conexion{
         }
 	}
 	public function ListarPeliculas(){
-		$sql = Conexion::conexion()->prepare("SELECT * FROM peliculas");
+		    $sql = Conexion::conexion()->prepare("SELECT * FROM peliculas");
         $sql->execute();
         $cont=1;
         while ($datos = $sql->fetch()) {
@@ -31,6 +31,25 @@ class Admin extends Conexion{
         	
         }
 	}
+  public function Count($tabla){
+     $sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla);
+     $sql->execute();
+     $cont=1;
+     while ($array=$sql->fetch()) {
+      $cont++;     
+     }
+     return $cont++;    
+  }
+
+
+  public function MostView($tabla){
+    $sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla." ORDER BY views DESC LIMIT 1");
+    $sql->execute();
+    $array=$sql->fetch();
+    return $array;
+     
+  }
+
 	public function ListarSeries(){
 		$sql = Conexion::conexion()->prepare("SELECT * FROM series");
         $sql->execute();
