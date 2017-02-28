@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-02-2017 a las 04:40:36
+-- Tiempo de generación: 28-02-2017 a las 00:54:18
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -121,7 +121,7 @@ CREATE TABLE `peliculas` (
 
 INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `url`, `img`, `id_categoria`, `id_idioma`, `views`, `calidad`) VALUES
 (1, 'La luz entre los oceanos', 'Australia, 1926. Un bote encalla en una isla remota y a su encuentro acuden el farero Tom Sherbourne y su joven esposa Isabel. En el interior del bote yacen un hombre muerto y un bebé que llora con desesperación. Tom e Isabel adoptan al niño y deciden criarlo sin informar a las autoridades. Todo se complica cuando descubren que la madre biológica del bebé está viva. Estreno en USA: septiembre 2016. Estreno en España: enero 2017.', 'https://openload.co/embed/sZHcLKRceaY/', '2476.jpg', 4, 3, 0, 'HD720p'),
-(2, 'Inframundo 5: Guerras de Sangre / Underworld 5', 'Nueva entrega de la franquicia Underworld, en la que la vampira Selene (Kate Beckinsale) deberá defenderse de ataques brutales de los dos clanes, el de los Lycans y el de los Vampiros que la traicionaron. Con sus únicos aliados, David (Theo James) y Thomas su padre (Charles Dance), ella debe detener la guerra eterna entre Vampiros y Lycans, aunque signifique tener que hacer un último sacrificio. Estreno en USA: enero 2017.', 'https://openload.co/embed/qR2LMKtAgl4/', 'db_posters_38990.jpg', 1, 1, 2, 'HD 720p'),
+(2, 'Inframundo 5: Guerras de Sangre / Underworld 5', 'Nueva entrega de la franquicia Underworld, en la que la vampira Selene (Kate Beckinsale) deberá defenderse de ataques brutales de los dos clanes, el de los Lycans y el de los Vampiros que la traicionaron. Con sus únicos aliados, David (Theo James) y Thomas su padre (Charles Dance), ella debe detener la guerra eterna entre Vampiros y Lycans, aunque signifique tener que hacer un último sacrificio. Estreno en USA: enero 2017.', 'https://openload.co/embed/Vos67L_MvjU/underworld_5_lat.mp4', 'db_posters_38990.jpg', 1, 3, 2, 'HD 720p'),
 (5, 'Búsqueda Implacable 1', 'Bryan Mills (Liam Neeson), un agente especial retirado, debe volver a la acción para liberar a su hija Kim (Maggie Grace), que ha sido raptada en París por una banda de albanokosovares que se dedica a la trata de blancas. Usando todas sus habilidades como agente especial del gobierno intentará buscar a su hija y vengarse de quienes la tienen.', 'https://openload.co/embed/5JndR4zDzJ4/', 'taken-busqueda-implcable.jpg', 1, 3, 0, 'HD 720p'),
 (6, 'Búsqueda Implacable 2', 'Búsqueda Implacable 2 nos trae nuevamente a Liam Neeson como Bryan Mills, el agente de la CIA retirado con un set particular de habilidades que no lo detuvieron en nada para salvar a su hija Kim de secuestradores albaneses. Cuando el padre de uno de los secuestradores jura venganza, y toma como rehenes a Bryan y a su mujer cuando están de vacaciones en Estambul, Bryan le pide a Kim que los ayude en el rescate, y usa las mismas fuerzas especiales para salvar a su familia y acabar con los secuestradores uno por uno.', 'https://openload.co/embed/Kf5JkNY4oXw/', 'Busqueda.Implacable2.Poster.MundoRmvbLatino.jpg', 1, 3, 0, 'HD 720p'),
 (7, 'Búsqueda Implacable 3', 'Tercera parte de la trilogía de las películas iniciadas en el año 2008 con Búsqueda Implacable ‘Venganza’ y que cuenta con una secuela en 2012 bajo el título ‘Venganza: Conexión Estambul’, donde Liam Neeson (‘Batman Begins’) vuelve a meterse en la piel de Bryan, un espía retirado que no dudará en hacer lo necesario a favor de la justicia y la supervivencia.', 'https://openload.co/embed/jZqycNeJVk8/', 'Tak3n.jpg', 1, 3, 0, 'HD 720p'),
@@ -129,7 +129,11 @@ INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `url`, `img`, `id_catego
 (9, 'Jackie', 'Biopic sobre la ex primera dama estadounidense Jacqueline Kennedy, centrado en los días inmediatamente posteriores al asesinato de JFK en Dallas el 22 de noviembre del año 1963.', 'https://openload.co/embed/t_6CVdrxQe4', 'Jackie.jpg', 4, 3, 0, 'HD 720p'),
 (10, 'Animales fantásticos y dónde encontrarlos ', 'Adaptación del libro homónimo de J.K. Rowling, un spin-off que amplía el mundo de la saga Harry Potter desde el punto de vista de Newt Scamander, un mago a quien le encargan escribir un libro sobre seres fantásticos. Se ambientará setenta años antes de lo narrado en las películas del mago.', 'https://openload.co/embed/hMZmlz4295k', '12772313959870206295.png', 2, 3, 0, 'HD 720p'),
 (11, 'Resident Evil 6', 'La humanidad está agonizando tras la traición sufrida por Alice a manos de Wesker. Alice deberá regresar a donde la comenzó la pesadilla -Raccoon City-, ya que allí la Corporación Umbrella está reuniendo fuerzas antes de un último ataque a los últimos supervivientes del apocalipsis. En una carrera contra el tiempo, Alice tendrá que unir fuerzas con viejos y con un inesperado aliado en una batalla contra hordas', 'https://openload.co/embed/pnTeEAW7YIk/videoplayback.mp4', 'res.jpg', 1, 3, 0, 'SD 480p'),
-(12, 'Drone Wars', 'Un combate entre drones y naves deja el cielo lleno de humo y repleto de barcos flotando en todas las direcciones. Mientras, pequeños grupos de humanos que sobreviven se mantienen juntos, tratando desesperadamente de resucitar cualquier apariencia de normalidad que una vez tuvieron. En medio del caos, un equipo de científicos escondidos en Los Ángeles es todo lo que queda para derrotar a los aviones no tripulados y acabar con la nave nodriza.', 'https://openload.co/embed/SVEQW3gXCxU/Drone_Wars_%282016%29_-_Latino_720p.avi.mp4', 'MV5BMTUzOTE1ODUyMF5BMl5BanBnXkFtZTgwNDE5OTE1MDI._V1_UY268_CR100182268_AL_.jpg', 1, 3, 0, 'HD 720p');
+(12, 'Drone Wars', 'Un combate entre drones y naves deja el cielo lleno de humo y repleto de barcos flotando en todas las direcciones. Mientras, pequeños grupos de humanos que sobreviven se mantienen juntos, tratando desesperadamente de resucitar cualquier apariencia de normalidad que una vez tuvieron. En medio del caos, un equipo de científicos escondidos en Los Ángeles es todo lo que queda para derrotar a los aviones no tripulados y acabar con la nave nodriza.', 'https://openload.co/embed/SVEQW3gXCxU/Drone_Wars_%282016%29_-_Latino_720p.avi.mp4', 'MV5BMTUzOTE1ODUyMF5BMl5BanBnXkFtZTgwNDE5OTE1MDI._V1_UY268_CR100182268_AL_.jpg', 1, 3, 0, 'HD 720p'),
+(13, 'Luz de Luna', 'Chiron es un joven de Miami que, en plena guerra de los carteles de la droga en los suburbios de la ciudad, va descubriendo su homosexualidad.', 'https://openload.co/embed/ejpmOtvLmJg', 'vMoonlight.jpg', 4, 1, 0, 'HD 720p'),
+(14, 'John Wick: Pacto de sangre', 'El legendario asesino John Wick (Keanu Reeves) se ve obligado a salir del retiro por un ex-asociado que planea obtener el control de un misterioso grupo internacional de asesinos. Obligado a ayudarlo por un juramento de sangre, John emprende un viaje a Roma lleno de adrenalina estremecedora para pelear contra los asesinos más peligrosos del mundo.', 'https://openload.co/embed/fpq4kL5zL5g', 'johnwicknew.jpg', 1, 3, 0, 'SD 480p'),
+(15, 'Día de patriotas ', 'Película sobre el atentado terrorista de la maratón de Boston de 2013, en el que murieron 3 personas y otras 260 resultaron heridas, y sobre la investigación para detener a los autores.', 'https://openload.co/embed/xtDx_JJgdCg', 'D_a_de_patriotas-458741705-large.jpg', 4, 1, 0, 'HD 720p'),
+(16, 'Vaiana / Moana: Un mar de aventuras', 'La historia se desarrolla hace dos milenios en unas islas del sur del Pacífico. La protagonista es Vaiana Waialiki, una joven que desea explorar el mundo navegando por el océano. Ella es la única hija de un importante capitán que pertenece a una familia con varias generaciones de marinos.', 'https://openload.co/embed/jwadY8K-kfk/', '2358.jpg', 2, 3, 0, 'HD 720p');
 
 -- --------------------------------------------------------
 
@@ -161,7 +165,8 @@ INSERT INTO `series` (`id`, `nombre`, `descripcion`, `genero_id`, `img`, `id_idi
 (8, 'The Walking Dead Temporada 5', 'La anterior Temporada 4, concluyo con rick y varios de los sobrevivientes en la terminal “terminus”, donde encontraron un grupo de personas que al parecer engañaban a la gente con los carteles de ayuda para secuestrarlos y hacerles daño (se presume que son canibales). Encerrados en un bagon Rick, Michonne, Daryl y Carl se reencuentran con Maggie, Gleen, Tara, Shasha, Bob y los demas. Sin embargo, el paradero de Tyreese, Carol y Beth aun es desconocido.', 0, 'the-walking-dead-temporada-5.jpg', 3, 'Finalizado'),
 (9, 'The Walking Dead Temporada 6', 'La anterior Temporada 5, concluyo con la aparición de Morgan en la comunidad de Alexandria. Rick por su parte trata de mostrarle a la comunidad que deben prepararse porque el peligro puede llegar en cualquier momento y un nuevo grupo de asesinos llamados “The Wolves” están cerca y solo tienen malas intenciones para las que la comunidad deberá estar preparada. Muchos de los que habitan allí aun no conocen en lo que el mundo se ha convertido fuera de sus muros y no sera fácil la tarea que tiene Rick y todo el grupo en sus manos.\r\n\r\n\r\nPor otro lado, se desarrollaran nuevas historias de amor y desamor que tratan de dar nueva esperanza en la vida de estos sobrevivientes, Glenn y Maggie es una de las parejas que quiere fortalecer cada vez mas su unión y Abraham quiere seguir el mismo camino con la persona que ama de corazón. El peligro se aproxima y la diferencia entre las creencias de Morgan y Rick puede ser un problema que cree desunión y debilite la fuerza que siempre ha caracterizado a todos los que siguen a vivos.', 0, '006_1rk1rx.jpg', 3, 'Finalizado'),
 (10, 'The Walking Dead Temporada 7', 'El capitulo final de la Temporada 6 termino con la aparición de Negan en una emboscada que le tendieron los salvadores al grupo de Rick mientras intentaban llevar con urgencia a Maggie a la comunidad de Hilltop para ver a un doctor. Luego de una larga charla Negan le dice al grupo que de ahora en adelante trabajaran para el, le daran la mitad de sus alimentos y que matara a uno de ellos por acabar con muchos de sus hombres.\r\n\r\nPor otro lado Rick parece estar en estado de shock con la situacion y permanece inmóvil. La vida de alguno de estos personajes: Glenn, Daryl, Michonne, Rosita, Abraham, Maggie, Rick, Eugene, Aaron, Sasha o Carl llega a su fin en el comienzo de una batalla contra el villano que viene a hacerle la vida imposible a todos los sobrevivientes de este apocalipsis Zombie.', 0, 'The-Walking-Dead-Temporada-7.jpg', 3, 'Emision'),
-(11, 'Game Of Thrones Temporada 1', 'Game of Thrones (juego de tronos) temporada 1 es la nueva serie de HBO del genero de fantasía medieval que narra la historia de un continente llamado poniente (ficticio) donde se libran batallas violentas entre los 7 reinos que luchan por tener el control del trono de hierro. En game of thrones encontraras escenas de guerra, mucha sangre y lujuria desenfrenada. Juego de tronos se estrenó en el 2011', 0, 'Game Of Thrones.jpg', 3, 'Finalizado');
+(11, 'Game Of Thrones Temporada 1', 'Game of Thrones (juego de tronos) temporada 1 es la nueva serie de HBO del genero de fantasía medieval que narra la historia de un continente llamado poniente (ficticio) donde se libran batallas violentas entre los 7 reinos que luchan por tener el control del trono de hierro. En game of thrones encontraras escenas de guerra, mucha sangre y lujuria desenfrenada. Juego de tronos se estrenó en el 2011', 0, 'Game Of Thrones.jpg', 3, 'Finalizado'),
+(12, 'Game Of Thrones Temporada 2', 'Game of Thrones (juego de tronos) es una nueva serie de television transmitida por HBO que se basa en un mundo donde las estaciones (verano e invierno) pueden durar años y donde la lucha por el poder lleva a librar batallas extremas donde la lujuria y la traicion son el pan de cada dia. los 7 reinos existentes compitenen fuertemente por el control del trono de hierro, los reyes y los guerreros seran la clave principal para desarrolar esta historia.', 0, 'game of thrones - temporada 2.jpg', 3, 'Finalizado');
 
 -- --------------------------------------------------------
 
@@ -301,6 +306,45 @@ CREATE TABLE `z_capitulos_gameofthronestemporada1` (
   `temporada` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_gameofthronestemporada1`
+--
+
+INSERT INTO `z_capitulos_gameofthronestemporada1` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 11, 1, 'Se Acerca el Invierno', 'https://openload.co/embed/zmW7YMJg_-c/', 1, '2017-02-27 17:24:50'),
+(2, 11, 2, 'El Camino real', 'https://openload.co/embed/NotT5K9cFAc/', 1, '0000-00-00 00:00:00'),
+(3, 11, 3, 'Lord Snow', 'https://openload.co/embed/GXAqEQTmnzQ/', 1, '0000-00-00 00:00:00'),
+(4, 11, 4, 'Tullidos, bastardos y cosas rotas', 'https://openload.co/embed/nU-Hgl7SW68/', 1, '0000-00-00 00:00:00'),
+(5, 11, 5, 'El lobo y el león', 'https://openload.co/embed/N83FSwm0PqI/', 1, '0000-00-00 00:00:00'),
+(6, 11, 6, 'Una corona de oro', 'https://openload.co/embed/mHkl_GRfSOM/', 1, '0000-00-00 00:00:00'),
+(7, 11, 7, 'Ganas o mueres', 'https://openload.co/embed/SlB3KVAwQrg/', 1, '0000-00-00 00:00:00'),
+(8, 11, 8, 'Por el lado de la punta', 'https://openload.co/embed/mdLc_DRJa_E/', 1, '0000-00-00 00:00:00'),
+(9, 11, 9, 'Baelor', 'https://openload.co/embed/Jb9mDe7l6ec/', 1, '0000-00-00 00:00:00'),
+(10, 11, 10, 'Fuego y sangre', 'https://openload.co/embed/yTsU_IGgmDY/', 1, '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `z_capitulos_gameofthronestemporada2`
+--
+
+CREATE TABLE `z_capitulos_gameofthronestemporada2` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `serie_id` int(11) NOT NULL,
+  `cap_num` int(11) NOT NULL,
+  `nombre_cap` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `temporada` int(11) NOT NULL,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `z_capitulos_gameofthronestemporada2`
+--
+
+INSERT INTO `z_capitulos_gameofthronestemporada2` (`id`, `serie_id`, `cap_num`, `nombre_cap`, `url`, `temporada`, `fecha`) VALUES
+(1, 12, 1, 'El Norte no olvida', 'https://openload.co/embed/bkLd3Mm8Dh8/gameofthones_cap_1_temp_2.flv.mp4', 2, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -594,7 +638,8 @@ INSERT INTO `z_capitulos_thewalkingdeadtemporada7` (`id`, `serie_id`, `cap_num`,
 (7, 10, 7, 'Cántame Una Canción', 'http://www.planetatvonlinehd.com/stream/495', 7, '0000-00-00 00:00:00'),
 (8, 10, 8, 'Corazones Aún Latiendo', 'http://www.planetatvonlinehd.com/stream/496', 7, '2017-02-26 04:30:53'),
 (9, 10, 9, 'Piedra en el camino', 'http://www.planetatvonlinehd.com/stream/501', 7, '0000-00-00 00:00:00'),
-(10, 10, 10, 'Nuevos Mejores Amigos', 'http://www.planetatvonlinehd.com/stream/530', 7, '0000-00-00 00:00:00');
+(10, 10, 10, 'Nuevos Mejores Amigos', 'http://www.planetatvonlinehd.com/stream/530', 7, '0000-00-00 00:00:00'),
+(11, 10, 11, 'Hostiles y Calamidades', 'https://openload.co/embed/QrYPHrSCG60/', 7, '0000-00-00 00:00:00');
 
 --
 -- Índices para tablas volcadas
@@ -651,6 +696,13 @@ ALTER TABLE `z_capitulos_dragonballsuper`
 -- Indices de la tabla `z_capitulos_gameofthronestemporada1`
 --
 ALTER TABLE `z_capitulos_gameofthronestemporada1`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `serie_id` (`serie_id`);
+
+--
+-- Indices de la tabla `z_capitulos_gameofthronestemporada2`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada2`
   ADD PRIMARY KEY (`id`),
   ADD KEY `serie_id` (`serie_id`);
 
@@ -728,12 +780,12 @@ ALTER TABLE `idioma`
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_dragonballsuper`
 --
@@ -743,7 +795,12 @@ ALTER TABLE `z_capitulos_dragonballsuper`
 -- AUTO_INCREMENT de la tabla `z_capitulos_gameofthronestemporada1`
 --
 ALTER TABLE `z_capitulos_gameofthronestemporada1`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT de la tabla `z_capitulos_gameofthronestemporada2`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada2`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_shingekinokyojin`
 --
@@ -783,7 +840,7 @@ ALTER TABLE `z_capitulos_thewalkingdeadtemporada6`
 -- AUTO_INCREMENT de la tabla `z_capitulos_thewalkingdeadtemporada7`
 --
 ALTER TABLE `z_capitulos_thewalkingdeadtemporada7`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- Restricciones para tablas volcadas
 --
@@ -812,6 +869,12 @@ ALTER TABLE `z_capitulos_dragonballsuper`
 --
 ALTER TABLE `z_capitulos_gameofthronestemporada1`
   ADD CONSTRAINT `z_capitulos_gameofthronestemporada1_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `z_capitulos_gameofthronestemporada2`
+--
+ALTER TABLE `z_capitulos_gameofthronestemporada2`
+  ADD CONSTRAINT `z_capitulos_gameofthronestemporada2_ibfk_1` FOREIGN KEY (`serie_id`) REFERENCES `series` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `z_capitulos_shingekinokyojin`

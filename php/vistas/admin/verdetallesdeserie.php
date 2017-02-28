@@ -6,7 +6,7 @@
  ?>
 <div class="row">
     <div class="col-lg-12">
-       <h1 class="page-header">Ver detalles de Pelicula<small> <?php echo $array['nombre']; ?> </small></h1>
+       <h1 class="page-header">Ver Detalles de Serie<small> <?php echo $array['nombre']; ?> </small></h1>
             <ol class="breadcrumb">
                 <li class="active">
                   <i class="fa fa-fw fa-arrows-v"></i>  <a href="index.php?op=listaseries">Lista > Series</a> > Ver Detalles
