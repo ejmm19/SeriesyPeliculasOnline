@@ -1,6 +1,8 @@
 <?php 
 include('../model/Admin.php');
+//include('../model/Public.php');
 $admin = new Admin();
+//$public = new Publico();
 
 
 if (isset($_FILES['caratulapelicula'])) {
@@ -63,7 +65,6 @@ if (isset($_POST['nombrecap'])) {
 	
 	echo "<script>window.location='../admin/panel/index.php?op=verdetallesdeserie&ver=".$_POST['serieid']."';</script>";
 }
-
 
 
 

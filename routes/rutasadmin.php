@@ -28,7 +28,10 @@ if (!isset($_GET['op'])||$_GET['op']=='') {
 	$navegacionadmin->VerDetallesSerie();
 }elseif ($_GET['op']=='editarserie') {
 	$navegacionadmin->EditarSerie();
+}elseif ($_GET['op']=='slider') {
+	$navegacionadmin->slider();
 }
+
 
 
 

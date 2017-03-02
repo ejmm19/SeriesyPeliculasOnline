@@ -147,6 +147,9 @@
                     <li class="active">
                         <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
+                     <li>
+                        <a href="index.php?op=slider"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Slider Incial</a>
+                    </li>
                     <li>
                         <a href="index.php?op=estadisticas"><i class="fa fa-fw fa-bar-chart-o"></i> Estadisticas</a>
                     </li>

@@ -6,6 +6,9 @@ class NavegacionAdmin{
 	public function dashboard(){
 		include('../../php/vistas/admin/dashboardadmin.php'); 
 	}
+	public function slider(){
+		include('../../php/vistas/admin/slider.php'); 
+	}
 	public function estadisticas(){
 		include('../../php/vistas/admin/estadisticas.php'); 
 	}

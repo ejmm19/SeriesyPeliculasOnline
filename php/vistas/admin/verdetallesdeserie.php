@@ -143,7 +143,13 @@
 <div class="row">
     <div class="col-lg-12">
 <table class="table table-striped table-hover ">
-<legend>Lista de Capitulos <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Agregar Capitulo</button></legend>
+<legend>Lista de Capitulos
+<?php if ($array['estado']=='Emision') {?>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Agregar Capitulo</button>
+<?php } ?>
+ 
+
+ </legend>
   <thead>
     <tr>
       <th>#</th>
@@ -155,11 +161,8 @@
     </tr>
   </thead>
   <tbody>
-  <?php 
-   
-  $admin->ListarCapSerie("z_capitulos_".str_replace(' ', '', $array['nombre']));
-
-     
+  <?php    
+  $admin->ListarCapSerie(strtolower("z_capitulos_".str_replace(' ', '', $array['nombre'])));     
    ?>
   
   </tbody>
@@ -167,9 +170,6 @@
     </div>
 </div>
 
-<script type="text/javascript">
- var clock = new Date(); // 
-</script>
 
 
             

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-02-2017 a las 00:54:18
+-- Tiempo de generación: 02-03-2017 a las 21:16:23
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -100,6 +100,28 @@ INSERT INTO `idioma` (`id`, `nombre`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `mensajes`
+--
+
+CREATE TABLE `mensajes` (
+  `id` int(11) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `mensaje` text NOT NULL,
+  `fecha` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `mensajes`
+--
+
+INSERT INTO `mensajes` (`id`, `correo`, `mensaje`, `fecha`) VALUES
+(1, 'ejmm10.19@gmail.com', 'asdasdasdsa', '03/02/2017/15:6'),
+(2, 'ejmm10.19@gmail.com', 'asdasdasdas', '03/02/2017/15:7'),
+(3, 'ejmm10.19@gmail.com', 'se me robaron las películas de pelis 24\r\n', '03/02/2017/15:8');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `peliculas`
 --
 
@@ -133,7 +155,10 @@ INSERT INTO `peliculas` (`id`, `nombre`, `descripcion`, `url`, `img`, `id_catego
 (13, 'Luz de Luna', 'Chiron es un joven de Miami que, en plena guerra de los carteles de la droga en los suburbios de la ciudad, va descubriendo su homosexualidad.', 'https://openload.co/embed/ejpmOtvLmJg', 'vMoonlight.jpg', 4, 1, 0, 'HD 720p'),
 (14, 'John Wick: Pacto de sangre', 'El legendario asesino John Wick (Keanu Reeves) se ve obligado a salir del retiro por un ex-asociado que planea obtener el control de un misterioso grupo internacional de asesinos. Obligado a ayudarlo por un juramento de sangre, John emprende un viaje a Roma lleno de adrenalina estremecedora para pelear contra los asesinos más peligrosos del mundo.', 'https://openload.co/embed/fpq4kL5zL5g', 'johnwicknew.jpg', 1, 3, 0, 'SD 480p'),
 (15, 'Día de patriotas ', 'Película sobre el atentado terrorista de la maratón de Boston de 2013, en el que murieron 3 personas y otras 260 resultaron heridas, y sobre la investigación para detener a los autores.', 'https://openload.co/embed/xtDx_JJgdCg', 'D_a_de_patriotas-458741705-large.jpg', 4, 1, 0, 'HD 720p'),
-(16, 'Vaiana / Moana: Un mar de aventuras', 'La historia se desarrolla hace dos milenios en unas islas del sur del Pacífico. La protagonista es Vaiana Waialiki, una joven que desea explorar el mundo navegando por el océano. Ella es la única hija de un importante capitán que pertenece a una familia con varias generaciones de marinos.', 'https://openload.co/embed/jwadY8K-kfk/', '2358.jpg', 2, 3, 0, 'HD 720p');
+(16, 'Vaiana / Moana: Un mar de aventuras', 'La historia se desarrolla hace dos milenios en unas islas del sur del Pacífico. La protagonista es Vaiana Waialiki, una joven que desea explorar el mundo navegando por el océano. Ella es la única hija de un importante capitán que pertenece a una familia con varias generaciones de marinos.', 'https://openload.co/embed/jwadY8K-kfk/', '2358.jpg', 2, 3, 0, 'HD 720p'),
+(17, 'Deadpool', 'Basado en el anti-héroe menos convencional de la Marvel, Deadpool narra el origen de un ex-operativo de la fuerzas especiales llamado Wade Wilson, reconvertido a mercenario, y que tras ser sometido a un cruel experimento adquiere poderes de curación rápida, adoptando Wade entonces el alter ego de Deadpool. Armado con sus nuevas habilidades y un oscuro y retorcido sentido del humor, Deadpool intentará dar caza al hombre que casi destruye su vida.', 'https://openload.co/embed/7usxAWfycuM', 'yW2I2fL.jpg', 1, 3, 0, 'HD 720p'),
+(18, 'El aro 3', 'Precuela de The Ring que contará la historia de cómo una joven descubre la cinta de vídeo de Samara y se convierte en su primera víctima.', 'https://openload.co/embed/cOrpbAEKZSY', 'rings-136144203-large.jpg', 10, 3, 0, 'SD 480p'),
+(19, 'La Grán Muralla', 'China, siglo XV. Un mercenario inglés (Matt Damon) y otro español (Pedro Pascal) son testigos del misterio que rodea a la construcción de la Gran Muralla China; ambos descubrirán que no se construyó para mantener alejados a los mongoles, sino para algo más peligroso: la mítica muralla ha sido edificada para detener la llegada de monstruos devoradores de carne humana.', 'https://openload.co/embed/n4vdDeIogYE', 'the_great_wall-521233751-large.jpg', 1, 3, 0, 'SD 480p');
 
 -- --------------------------------------------------------
 
@@ -167,6 +192,31 @@ INSERT INTO `series` (`id`, `nombre`, `descripcion`, `genero_id`, `img`, `id_idi
 (10, 'The Walking Dead Temporada 7', 'El capitulo final de la Temporada 6 termino con la aparición de Negan en una emboscada que le tendieron los salvadores al grupo de Rick mientras intentaban llevar con urgencia a Maggie a la comunidad de Hilltop para ver a un doctor. Luego de una larga charla Negan le dice al grupo que de ahora en adelante trabajaran para el, le daran la mitad de sus alimentos y que matara a uno de ellos por acabar con muchos de sus hombres.\r\n\r\nPor otro lado Rick parece estar en estado de shock con la situacion y permanece inmóvil. La vida de alguno de estos personajes: Glenn, Daryl, Michonne, Rosita, Abraham, Maggie, Rick, Eugene, Aaron, Sasha o Carl llega a su fin en el comienzo de una batalla contra el villano que viene a hacerle la vida imposible a todos los sobrevivientes de este apocalipsis Zombie.', 0, 'The-Walking-Dead-Temporada-7.jpg', 3, 'Emision'),
 (11, 'Game Of Thrones Temporada 1', 'Game of Thrones (juego de tronos) temporada 1 es la nueva serie de HBO del genero de fantasía medieval que narra la historia de un continente llamado poniente (ficticio) donde se libran batallas violentas entre los 7 reinos que luchan por tener el control del trono de hierro. En game of thrones encontraras escenas de guerra, mucha sangre y lujuria desenfrenada. Juego de tronos se estrenó en el 2011', 0, 'Game Of Thrones.jpg', 3, 'Finalizado'),
 (12, 'Game Of Thrones Temporada 2', 'Game of Thrones (juego de tronos) es una nueva serie de television transmitida por HBO que se basa en un mundo donde las estaciones (verano e invierno) pueden durar años y donde la lucha por el poder lleva a librar batallas extremas donde la lujuria y la traicion son el pan de cada dia. los 7 reinos existentes compitenen fuertemente por el control del trono de hierro, los reyes y los guerreros seran la clave principal para desarrolar esta historia.', 0, 'game of thrones - temporada 2.jpg', 3, 'Finalizado');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `slider`
+--
+
+CREATE TABLE `slider` (
+  `id` int(11) NOT NULL,
+  `pelicula` varchar(200) NOT NULL,
+  `img` varchar(100) NOT NULL,
+  `descripcion` varchar(300) NOT NULL,
+  `url_pelicula` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `slider`
+--
+
+INSERT INTO `slider` (`id`, `pelicula`, `img`, `descripcion`, `url_pelicula`) VALUES
+(1, 'Resident Evil 6 | Final', '_noticias2010_-3162354.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, pariatur! Repudiandae alias aspernatur, dolorem quos dignissimos. Ea vel possimus porro quia dolores. Ipsam explicabo, quidem recusandae voluptates repellendus enim error!', 'index.php?verpeli=2'),
+(2, 'El Aro 3', '57bdee48a7064.r_1472065106249.0-0-614-405.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, pariatur! Repudiandae alias aspernatur, dolorem quos dignissimos. Ea vel possimus porro quia dolores. Ipsam explicabo, quidem recusandae voluptates repellendus enim error!', 'index.php?verpeli=3'),
+(3, 'Inframundo 5', 'sng44i4LfEAwSp0Ggie9neckis8.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, pariatur! Repudiandae alias aspernatur, dolorem quos dignissimos. Ea vel possimus porro quia dolores. Ipsam explicabo, quidem recusandae voluptates repellendus enim error!', 'index.php?verpeli=4'),
+(4, '50 Sombras Más Oscuras', 'teaser-oficial-de-cincuenta-sombras-mas-oscuras-6051505.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, pariatur! Repudiandae alias aspernatur, dolorem quos dignissimos. Ea vel possimus porro quia dolores. Ipsam explicabo, quidem recusandae voluptates repellendus enim error!', 'index.php?verpeli=5'),
+(5, 'xXx: Reactivado', 'maxresdefault.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, pariatur! Repudiandae alias aspernatur, dolorem quos dignissimos. Ea vel possimus porro quia dolores. Ipsam explicabo, quidem recusandae voluptates repellendus enim error!', 'index.php?verpeli=1');
 
 -- --------------------------------------------------------
 
@@ -664,6 +714,12 @@ ALTER TABLE `idioma`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `mensajes`
+--
+ALTER TABLE `mensajes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
@@ -678,6 +734,12 @@ ALTER TABLE `series`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_idioma` (`id_idioma`),
   ADD KEY `genero_id` (`genero_id`);
+
+--
+-- Indices de la tabla `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -777,15 +839,25 @@ ALTER TABLE `genero_series`
 ALTER TABLE `idioma`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
+-- AUTO_INCREMENT de la tabla `mensajes`
+--
+ALTER TABLE `mensajes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT de la tabla `series`
 --
 ALTER TABLE `series`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT de la tabla `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `z_capitulos_dragonballsuper`
 --

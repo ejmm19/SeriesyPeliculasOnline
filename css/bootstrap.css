@@ -4277,7 +4277,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 19.5px 15px;
+  /*padding: 10.5px 60px;*/
   font-size: 19px;
   line-height: 21px;
   height: 60px;
@@ -4292,7 +4292,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    /*margin-left: -15px;*/
   }
 }
 .navbar-toggle {
@@ -6426,8 +6426,9 @@ button.close {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  /*text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
+  background: rgba(31, 29, 29, 0.84);
 }
 .carousel-caption .btn {
   text-shadow: none;
@@ -6451,9 +6452,20 @@ button.close {
     margin-right: -10px;
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
+    left: 10%;
+    right: 60%;
     padding-bottom: 30px;
+  }
+  .carousel-caption>a {
+      margin-left: 70%;
+  }
+  .carousel-caption>p{
+      padding-left: 5%;
+      padding-right:  5%;
+  }
+  .carousel-caption>h4 {
+      padding-left: 5%;
+      padding-right:  5%; 
   }
   .carousel-indicators {
     bottom: 20px;

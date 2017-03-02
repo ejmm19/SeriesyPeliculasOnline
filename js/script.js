@@ -8,6 +8,7 @@ $(document).ready(function(){
 		}
 	});
 
+		//AJAX PARA EL LOGIN DE ADMIN
 	 $("#entrar").click(function(){
  		var url = "../controllers/LoginController.php"; // El script a dónde se realizará la petición.
 	    $.ajax({
@@ -34,7 +35,38 @@ $(document).ready(function(){
 	    return false; // Evitar ejecutar el submit del formulario.
 	 });
 
-	 
+	 //AJAX PARA EL ENVIO DE MENSAJE DESDE LA PAGINA
+	 $("#formcontact").submit(function(){ 		
+	    $.ajax({
+	           type: "POST",
+	           url: "controllers/PublicController.php",
+	           data: $("#formcontact").serialize(), // Adjuntar los campos del formulario enviado.
+	           success: function(data){
+	               
+	            $("#resultado").html("<div class='alert alert-dismissible alert-success'><button type='button' class='close' data-dismiss='alert'>&times;</button><strong>"+data+"!</strong>Pronto uno de Nuestros Administradores le responderá</div>");
+	            $('#resultado').fadeOut(6000); 
+	            document.getElementById('inputEmail').value = "";
+	            document.getElementById('textArea').value = "";
+	               //$("#inputEmail").empty();
+	                // Mostrar la respuestas del script PHP.
+	           },
+	           beforeSend: function(){
+	           	$("#resultado").html("<p align='center'><img src='img/loading1.gif' width='10%'></p>");
+	           },
+	           error: function(data){
+                /*
+                * Se ejecuta si la peticón ha sido erronea
+                * */
+                alert("Problemas al tratar de enviar el formulario");
+            }
+	         });
+
+	    return false; // Evitar ejecutar el submit del formulario.
+	 });
+
+
+
+	 //MOSTRAR LA IMAGEN DEL ARCHIVO QUE SE CARGA DESDE EL FORMULARIO DE SERIES Y EN EL DE PELICULAS
   $('#caratulapeliculaedit').change(function(e) {
       addImage(e); 
     });
@@ -58,7 +90,13 @@ $(document).ready(function(){
 
 	 //guardar datos de peliculas
 	 
-
+	 $('.zoomimg').hover(function(){
+	 	
+	 	$('.informacion').css('display','block');
+	 	}, function(){
+	 		
+	 	$('.informacion').css('display','none');
+	 });
 
 	 
 	
