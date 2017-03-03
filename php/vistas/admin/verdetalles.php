@@ -27,7 +27,7 @@
            <li><b>Idioma:</b> <p><?php echo $admin->ConvertTable('idioma',$array['id_idioma']) ?></p></li>
            <li><b>Categoria:</b> <p><?php echo $admin->ConvertTable('categorias',$array['id_categoria']) ?></p></li>
            <li><b>Vista:</b> <p><?php echo $array['views'] ?> Veces</p></li>
-           <li><b>Vista:</b> <p><a href="<?php echo $array['url'] ?>" class="btn btn-primary" target="_blank" >Ver Pelicula</a></p></li>
+           <li><b>Enlace:</b> <p><a href="<?php echo $array['url'] ?>" class="btn btn-primary" target="_blank" >Ver Pelicula</a></p></li>
          </ul>
          <div class="col-md-4 col-md-offset-8">
           <a href="index.php?op=editar&edit=<?php echo $array['id']?>" class="btn btn-primary">Editar</a>

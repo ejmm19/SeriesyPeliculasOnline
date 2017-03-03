@@ -41,6 +41,8 @@ class NavegacionAdmin{
 	}
 	public function EditarSerie(){
 		include('../../php/vistas/admin/editarserie.php'); 	
+	}public function Mensajes(){
+		include('../../php/vistas/admin/mensajes.php'); 	
 	}
 
 }

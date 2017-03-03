@@ -81,6 +81,7 @@ background: -ms-linear-gradient(45deg, rgba(241,247,52,1) 0%, rgba(241,111,92,1)
 }
 .panel-heading{
 	padding-bottom: 20px !important;
+	min-height: 89px;
 }
 #menulateral{
 	
@@ -95,43 +96,54 @@ background: -ms-linear-gradient(45deg, rgba(241,247,52,1) 0%, rgba(241,111,92,1)
 	-webkit-border-radius: 10px 10px 10px 10px;
 	
 }
-#zoomimg{
-	-webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-/*.zoomimg:hover{
-	-webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}*/
-.informacion{
-	display: none;
-	text-align: center;
-	color: #4dca4d;
-	position: absolute;
-    background: rgba(0, 0, 0, 0.64);
-    width: 71%;
-    height: 100px;
-    margin-top: -67%;
-}
-.informacion>span{
-	cursor: pointer;
-	font-size: 40px;
-	margin-top: 20%;
-	webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.informacion>span:hover{
-	-webkit-transform: scale(1.28);
-  transform: scale(1.28);
-}
+
 #resultado{
 	position: absolute;
     margin-top: -90%;
     margin-left: 80%;
     
     width: 50%;
+}
+
+#box{
+  	height: 265px;
+   	width: 100% ;	
+	overflow:hidden;
+}
+#overlay{
+	color: #FFF;
+	background:rgba(0,0,0,.75);
+    text-align:center;
+    width: 117%;
+    margin-left: -8%;
+    margin-top: 40%;
+    opacity:0;
+
+    -webkit-transition: opacity .25s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#box:hover #overlay {
+	opacity:1;
+	margin-top: 57%;
+}
+#plus{
+  font-family:Helvetica;
+  font-size: 20px; 
+}
+.icone{
+	font-size: 50px;
+	-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.icone:hover{
+	color: skyblue;
+	transform: scale(1.2,1.2);
+}
+#plus>p{
+	font-size: 14px;
 }

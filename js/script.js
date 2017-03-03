@@ -90,13 +90,7 @@ $(document).ready(function(){
 
 	 //guardar datos de peliculas
 	 
-	 $('.zoomimg').hover(function(){
-	 	
-	 	$('.informacion').css('display','block');
-	 	}, function(){
-	 		
-	 	$('.informacion').css('display','none');
-	 });
+	 
 
 	 
 	

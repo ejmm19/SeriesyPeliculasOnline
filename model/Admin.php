@@ -5,6 +5,8 @@
 */
 include('Conexion.php');
 class Admin extends Conexion{
+
+
 	
 	public function ListarSelect($tabla){
 		$sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla);
@@ -34,11 +36,35 @@ class Admin extends Conexion{
   public function Count($tabla){
      $sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla);
      $sql->execute();
-     $cont=1;
+     $cont=0;
      while ($array=$sql->fetch()) {
       $cont++;     
      }
      return $cont++;    
+  }
+  public function Mensajes(){
+    $sql = Conexion::conexion()->prepare("SELECT * FROM mensajes WHERE estado = 'sin leer' ORDER BY id DESC ");
+    $sql->execute();   
+    while ($datos=$sql->fetch()) {
+      echo "<li class='message-preview'>
+                            <a href='index.php?op=mensajes&ver=".$datos['id']."'>
+                                <div class='media'>
+                                    <span class='pull-left'>
+                                        <img class='media-object' src='../../img/User_Circle.png' width='30px' >
+                                    </span>
+                                    <div class='media-body'>
+
+                                        <h6 class='media-heading'><strong>".$datos['correo']."</strong>
+                                        </h6>
+                                        <p class='small text-muted'><i class='fa fa-clock-o'></i>".$datos['fecha']."</p>
+                                        <p>".substr($datos['mensaje'], 0, 50)."  ...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>";
+      
+    }
+    
   }
 
 
@@ -104,18 +130,18 @@ class Admin extends Conexion{
         echo "no hay archivos";
     	}
     	}
-	public function CreatePelicula($nombre,$descrip,$url,$img,$cat,$idioma,$calidad){
-		$sql = Conexion::conexion()->prepare("INSERT INTO peliculas(nombre, descripcion, url,img, id_categoria, id_idioma, calidad)
-											  VALUES ('".$nombre."','".$descrip."','".$url."','".$img."','".$cat."','".$idioma."','".$calidad."')");
+	public function CreatePelicula($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$calificacion,$fecha){
+		$sql = Conexion::conexion()->prepare("INSERT INTO peliculas(nombre, descripcion, url,img, id_categoria, id_idioma, calidad,calificacion, fecha_publicacion)
+											  VALUES ('".$nombre."','".$descrip."','".$url."','".$img."','".$cat."','".$idioma."','".$calidad."','".$calificacion."','".$fecha."')");
         $sql->execute();
 	}
 	public function EditPeliculas($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$id){
 		$sql = Conexion::conexion()->prepare("UPDATE peliculas SET nombre ='".$nombre."', descripcion='".$descrip."', url='".$url."',img='".$img."', id_categoria='".$cat."', id_idioma='".$idioma."', calidad='".$calidad."' WHERE id=".$id);
 		$sql->execute();	
 	}
-	public function CreateSerie($nombre,$descripcion,$img,$idioma,$estado){
-		$sql = Conexion::conexion()->prepare("INSERT INTO series (nombre, descripcion, img, id_idioma, estado)
-											  VALUES ('".$nombre."','".$descripcion."','".$img."','".$idioma."','".$estado."')");
+	public function CreateSerie($nombre,$descripcion,$genero,$img,$idioma,$estado){
+		$sql = Conexion::conexion()->prepare("INSERT INTO series (nombre, descripcion,genero_id, img, id_idioma, estado)
+											  VALUES ('".$nombre."','".$descripcion."','".$genero."','".$img."','".$idioma."','".$estado."')");
         $sql->execute();
 	}
 	public function CrearTableCapitulosSerie($nombretabla){

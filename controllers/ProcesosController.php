@@ -3,18 +3,25 @@ include('../model/Admin.php');
 //include('../model/Public.php');
 $admin = new Admin();
 //$public = new Publico();
+$hoy = getdate();
 
+echo "</br>";
+$ndia = $hoy['mday'];
+$mes = $hoy['mon'];
+$ano = $hoy['year'];
+$fecha = $ndia."-".$mes."-".$ano;
+ 
 
 if (isset($_FILES['caratulapelicula'])) {
 	$admin->SubirImg($_FILES['caratulapelicula'],'caratulas');
 	$admin->CreatePelicula($_POST['nombre'],$_POST['descripcion'],$_POST['url'],
 		$_FILES['caratulapelicula']['name'],$_POST['categoria'],
-		$_POST['idioma'],$_POST['calidad']);
+		$_POST['idioma'],$_POST['calidad'],$_POST['calificacion'],$fecha);
 	echo "<script>window.location='../admin/panel/index.php?op=listapeliculas';</script>";
 }
 if (isset($_FILES['caratulaserie'])) {
 	$admin->SubirImg($_FILES['caratulaserie'],'seriesportada');
-	$admin->CreateSerie($_POST['nombreserie'],$_POST['descripcionserie'],$_FILES['caratulaserie']['name'],$_POST['idiomaserie'],'Emision');
+	$admin->CreateSerie($_POST['nombreserie'],$_POST['descripcionserie'],$_POST['generoseries'],$_FILES['caratulaserie']['name'],$_POST['idiomaserie'],'Emision');
 	$admin->CrearTableCapitulosSerie(strtolower("z_capitulos_".str_replace(' ', '', $_POST['nombreserie'])));
 	echo "<script>window.location='../admin/panel/index.php?op=listaseries';</script>";
 }
@@ -61,7 +68,7 @@ if (isset($_POST['eliminarserie'])) {
 
 if (isset($_POST['nombrecap'])) {
 	$admin->AgregarCap(strtolower("z_capitulos_".str_replace(' ', '', $_POST['nombreserie'])),$_POST['serieid'],
-		$_POST['numerocap'],$_POST['nombrecap'],$_POST['urlcap'],$_POST['temporada'],$_POST['fecha']);
+		$_POST['numerocap'],$_POST['nombrecap'],$_POST['urlcap'],$_POST['temporada'],$fecha);
 	
 	echo "<script>window.location='../admin/panel/index.php?op=verdetallesdeserie&ver=".$_POST['serieid']."';</script>";
 }

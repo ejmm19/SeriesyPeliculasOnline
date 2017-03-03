@@ -10,6 +10,9 @@ class ContenidoAdmin extends Admin{
 	public function Listaridiomas(){
 		return Admin::ListarSelect('idioma');
 	}
+	public function ListarGeneroseries(){
+		return Admin::ListarSelect('genero_series');
+	}
   	
 } 
 ?>

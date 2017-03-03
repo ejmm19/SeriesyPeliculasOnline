@@ -46,6 +46,15 @@
         </select>
       </div>
     </div>  
+    <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">Genero</label>
+      <div class="col-lg-10">
+        <select class="form-control" name="generoseries">
+           <?php $contenidoadmin = new ContenidoAdmin();
+            $contenidoadmin->ListarGeneroseries(); ?>
+        </select>
+      </div>
+    </div>  
     
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">

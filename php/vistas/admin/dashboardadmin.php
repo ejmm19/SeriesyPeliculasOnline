@@ -109,12 +109,12 @@
                                         <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="font-size: 60px;"></span>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">13</div>
+                                        <div class="huge"><?php echo $admin->Count('mensajes'); ?></div>
                                         <div>Mensajes</div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="#">
+                            <a href="index.php?op=mensajes">
                                 <div class="panel-footer">
                                     <span class="pull-left">Ver Mensajes</span>
                                     <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

@@ -113,7 +113,7 @@
                     <div class="form-group">
                       <label for="inputEmail" class="col-lg-2 control-label">Fecha</label>
                       <div class="col-lg-10">
-                        <input type="hidden" class="form-control" name="fecha" min="1" placeholder="Fecha">
+                        <input type="hidden" class="form-control" name="fecha"  placeholder="Fecha">
                       </div>
                     </div>
                   

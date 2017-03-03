@@ -30,6 +30,8 @@ if (!isset($_GET['op'])||$_GET['op']=='') {
 	$navegacionadmin->EditarSerie();
 }elseif ($_GET['op']=='slider') {
 	$navegacionadmin->slider();
+}elseif ($_GET['op']=='mensajes') {
+	$navegacionadmin->Mensajes();
 }
 
 

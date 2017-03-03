@@ -8,6 +8,7 @@
            </ol>
     </div>
 </div>
+
                 <!-- /.row -->
 <div class="row">
     <div class="col-lg-6">
@@ -18,6 +19,7 @@
       <label for="inputnombre" class="col-lg-2 control-label">Nombre</label>
       <div class="col-lg-10">
         <input type="text" class="form-control" name="nombre" placeholder="Nombre de la Pelicula" autofocus="" required="">
+        
       </div>
     </div>
     <div class="form-group">
@@ -71,6 +73,18 @@
         </select>
       </div>
     </div>
+    <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">Calificación</label>
+      <div class="col-lg-10">
+        <select class="form-control" name="calificacion" required="">
+          <option value="1">1 *</option>
+          <option value="2">2 **</option>
+          <option value="3">3 ***</option>
+          <option value="4">4 ****</option>
+          <option value="5">5 *****</option>
+        </select>
+      </div>
+    </div>
     
     
     <div class="form-group">
@@ -87,3 +101,4 @@
       <img src="" id="imgSalida" width="100%" height="350px">
     </div>
 </div>
+
