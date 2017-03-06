@@ -16,7 +16,7 @@ if (isset($_FILES['caratulapelicula'])) {
 	$admin->SubirImg($_FILES['caratulapelicula'],'caratulas');
 	$admin->CreatePelicula($_POST['nombre'],$_POST['descripcion'],$_POST['url'],
 		$_FILES['caratulapelicula']['name'],$_POST['categoria'],
-		$_POST['idioma'],$_POST['calidad'],$_POST['calificacion'],$fecha);
+		$_POST['idioma'],$_POST['calidad'],$_POST['calificacion'],$fecha,$_POST['estreno']);
 	echo "<script>window.location='../admin/panel/index.php?op=listapeliculas';</script>";
 }
 if (isset($_FILES['caratulaserie'])) {

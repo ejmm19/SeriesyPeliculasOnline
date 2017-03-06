@@ -16,6 +16,14 @@ class Admin extends Conexion{
         	echo "<option value='".utf8_decode($datos[0])."'>".utf8_decode($datos[1])."</option>";
         }
 	}
+  public function Dropdown($tabla){
+    $sql = Conexion::conexion()->prepare("SELECT * FROM ".$tabla);
+        $sql->execute();
+        
+        while ($datos = $sql->fetch()) {
+          echo "<li><a href='#'>Action</a></li>";
+        }
+  }
 	public function ListarPeliculas(){
 		    $sql = Conexion::conexion()->prepare("SELECT * FROM peliculas");
         $sql->execute();
@@ -130,9 +138,9 @@ class Admin extends Conexion{
         echo "no hay archivos";
     	}
     	}
-	public function CreatePelicula($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$calificacion,$fecha){
-		$sql = Conexion::conexion()->prepare("INSERT INTO peliculas(nombre, descripcion, url,img, id_categoria, id_idioma, calidad,calificacion, fecha_publicacion)
-											  VALUES ('".$nombre."','".$descrip."','".$url."','".$img."','".$cat."','".$idioma."','".$calidad."','".$calificacion."','".$fecha."')");
+	public function CreatePelicula($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$calificacion,$fecha,$estreno){
+		$sql = Conexion::conexion()->prepare("INSERT INTO peliculas(nombre, descripcion, url,img, id_categoria, id_idioma, calidad,calificacion, fecha_publicacion,estreno)
+											  VALUES ('".$nombre."','".$descrip."','".$url."','".$img."','".$cat."','".$idioma."','".$calidad."','".$calificacion."','".$fecha."','".$estreno."')");
         $sql->execute();
 	}
 	public function EditPeliculas($nombre,$descrip,$url,$img,$cat,$idioma,$calidad,$id){

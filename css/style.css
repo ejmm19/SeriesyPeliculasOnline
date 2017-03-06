@@ -147,3 +147,8 @@ background: -ms-linear-gradient(45deg, rgba(241,247,52,1) 0%, rgba(241,111,92,1)
 #plus>p{
 	font-size: 14px;
 }
+#bannerver{
+	height: 54px;
+    background: #0e4c40;
+    background-size: cover;
+}

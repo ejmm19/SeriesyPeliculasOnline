@@ -29,6 +29,11 @@
         $('#carousel-724995').carousel({
         interval: 5200
         });
+        $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(500);
+      }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(500);
+      });
     </script>
 
   </body>

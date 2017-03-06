@@ -67,6 +67,7 @@
       <label for="select" class="col-lg-2 control-label">Calidad</label>
       <div class="col-lg-10">
         <select class="form-control" name="calidad" required="">
+          <option value="Cam">Cam</option>
           <option value="SD 480p">SD 480p</option>
           <option value="HD 720p">HD 720p</option>
           <option value="HD 1080p">HD 1080p</option>
@@ -82,6 +83,15 @@
           <option value="3">3 ***</option>
           <option value="4">4 ****</option>
           <option value="5">5 *****</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">De Estreno</label>
+      <div class="col-lg-10">
+        <select class="form-control" name="estreno" required="">
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
         </select>
       </div>
     </div>

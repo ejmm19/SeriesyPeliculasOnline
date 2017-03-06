@@ -15,10 +15,10 @@
          <div class="col-md-3" id="menulateral">
               <div class="list-group"><br>
               <a class="list-group-item active">Menu</a>
-              <a href="#" class="list-group-item">Estrenos</a>
-              <a href="#" class="list-group-item">Recomendadas</a>
-              <a href="#" class="list-group-item">Calidad HD</a>
-              <a href="#" class="list-group-item">Series</a>
+              <a href="ver.php?op=estrenos" class="list-group-item">Estrenos</a>
+              <a href="ver.php?op=recomendadas" class="list-group-item">Recomendadas</a>
+              <a href="ver.php?op=calidad" class="list-group-item">Calidad HD</a>
+              <a href="ver.php?op=verseries" class="list-group-item">Series</a>
             </div>
             <div class="fb-like" data-href="https://www.facebook.com/Cine-y-Series-Online-1919933861569423/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             <br>

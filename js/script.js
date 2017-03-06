@@ -86,7 +86,11 @@ $(document).ready(function(){
       var result=e.target.result;
       $('#imgSalida').attr("src",result);
      }
-    
+	
+
+	//mostrardropdown
+
+ 		
 
 	 //guardar datos de peliculas
 	 
