@@ -1,4 +1,4 @@
 # SeriesyPeliculasOnline
 Proyecto Series y Peliculas Online
 
-Created and developed by Eric Js Martínez Sair Sánchez V.
+Created and developed by Eric Js Martínez
